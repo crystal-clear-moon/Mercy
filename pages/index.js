@@ -229,8 +229,24 @@ export default function Home() {
             Our community keeps growing everyday.  Please join our social platforms to get updates using the links below. <br/>
             There are 25k+ people in our different groups! 
           </div>
-          <div className="text-xl text-yellow-500">
+          <div className="text-xl text-yellow-500 text-center">
             You can connect with us from anywhere in the world because we have international groups for foreign language speakers. 
+          </div>
+        </div>
+        <div className="flex py-12 justify-center">
+          <div className="flex justify-around w-8/12 flex-col sm:flex-row">
+            <Header>
+              Price Chart
+            </Header>
+            <Header>
+              How to Buy
+            </Header>
+            <Header>
+              Moon Map
+            </Header>
+            <Header>
+              Contact US
+            </Header>
           </div>
         </div>
       </div>
