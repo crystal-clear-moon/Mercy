@@ -21,7 +21,7 @@ export default function Home() {
             </Link>
             <div className="my-auto text-2xl text-yellow-700 hover:cursor-pointer hover:text-red">TREAT TOKEN</div>
           </div>
-          <div className="hidden sm:block items-center" style={{display: "flex"}}>
+          <div className="hidden sm:flex items-center">
             <div>
               <Link href="#about">
                 <Header>
