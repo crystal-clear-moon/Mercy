@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 export const Box = styled.div.attrs({
     className: "m-1 sm:m-6 p-4 sm:p-12 my-auto text-xl bg-transparent rounded-3xl border-0 max-w-screen-xl sm:border-8"
 })`
@@ -80,3 +79,18 @@ export const RoadMap = styled.div.attrs({
     }
 `;
 
+export const BgDiv = styled.div.attrs({
+})`
+    background: url("svg/back.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    background-size: contain;
+    background-position: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+`;

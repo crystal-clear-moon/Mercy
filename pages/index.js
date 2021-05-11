@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Header } from '../component/btn.styles'
-import { Box, Strength, Img, RoadMap } from '../component/box.styles'
+import { Box, Strength, Img, RoadMap, BgDiv } from '../component/box.styles'
 import Link from 'next/link'
 
 export default function Home() {
@@ -13,13 +13,13 @@ export default function Home() {
         <meta name="description" content="Shiba token" />
         <link rel="icon" href="https://www.shibatoken.com/img/shib_logo_header.png" />
       </Head>
-      <div className="bg-pink-100">
-        <div className="bg-transparent flex justify-around">
+      <div>
+        <div className="bg-blue-500 flex justify-around">
           <div className="flex my-auto p-2">
             <Link href="#">
               <img style={{height: "fit-content"}} src="https://www.shibatoken.com/img/shib_logo_header.png" />
             </Link>
-            <div className="my-auto text-2xl text-yellow-700 hover:cursor-pointer hover:text-red">TREAT TOKEN</div>
+            <div className="my-auto text-2xl text-white hover:cursor-pointer hover:text-white">TREAT TOKEN</div>
           </div>
           <div className="hidden sm:flex items-center">
             <div>
@@ -41,7 +41,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-around bg-yellow-50 flex-col sm:flex-row">
+        <div className="flex justify-around flex-col sm:flex-row">
           <div className="my-auto px-6">
             <p className="text-yellow-800 text-xl sm:text-2xl lg:text-4xl">
               Decentralized Meme Tokens <br />
@@ -50,12 +50,12 @@ export default function Home() {
             <p className="text-yellow-800 text-xl sm:text-2xl lg:text-4xl">
               ShibaSwap. Fun tokens. Artist incubator.<br/> Growing 260k+ Community <br /> & more on the horizon!
             </p>
-            <button className="text-white bg-red-800 mt-12 py-2 px-4">READ OUR WOOFPAPER</button>
+            <button className="text-white mt-12 py-2 px-4">READ OUR WOOFPAPER</button>
           </div>
           <Img src="https://www.shibatoken.com/img/shib_ch_le.png" />
         </div>
         <div className="pb-28 sm:pb-14 flex flex-col items-center">
-          <div className="w-full bg-pink-100 flex justify-center">
+          <div className="w-full flex justify-center">
             <Box id="about">
               <div className="header flex">
                 <img width="auto" height="fit-content" src="https://www.shibatoken.com/img/shib_logo_header.png" />
@@ -81,7 +81,7 @@ export default function Home() {
               </div>
             </Box>
           </div>
-          <div className="w-full bg-yellow-50 flex justify-center">
+          <div className="w-full flex justify-center">
             <Box id="howto">
               <div className="header flex">
                 <img src="https://www.shibatoken.com/img/shib_logo_header.png" />
@@ -221,7 +221,7 @@ export default function Home() {
             </div>
           </RoadMap>
         </div>
-        <div id="community" className="flex flex-col items-center pb-24 text-pink-100 bg-green-100 pt-12 px-2">
+        <div id="community" className="flex flex-col items-center pb-24 text-pink-100 pt-12 px-2">
           <h1 className="text-2xl sm:text-4xl lg:text-6xl text-yellow-700">
             COMMUNITY
           </h1>
@@ -233,7 +233,7 @@ export default function Home() {
             You can connect with us from anywhere in the world because we have international groups for foreign language speakers. 
           </div>
         </div>
-        <div className="flex py-12 justify-center">
+        <div className="flex py-6 justify-center bg-blue-500">
           <div className="flex justify-around w-8/12 flex-col sm:flex-row">
             <Header>
               Price Chart
