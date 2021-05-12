@@ -14,9 +14,9 @@ export default function Home() {
     var myScrollFunc = function () {
         var y = window.scrollY;
         if (y >= 1) {
-            headerId.className = "hidden"
-        } else {
             headerId.className = "block"
+        } else {
+            headerId.className = "hidden"
         }
     };
     window.addEventListener("scroll", myScrollFunc);
