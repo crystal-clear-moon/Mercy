@@ -46,7 +46,7 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <div className="flex justify-center flex-col sm:flex-row bg-black min-h-screen max-h-screen h-screen " style={{minWidth: "1024px"}}>
+          <div className="flex justify-center flex-col sm:flex-row bg-black min-h-screen max-h-screen h-screen" style={{minWidth: "1024px"}}>
             <div className="my-auto px-6 mr-24">
               <h1 className="text-2xl sm:text-3xl lg:text-6xl" style={{color: "#fff4ce"}}>
                 Little meme.

@@ -4,7 +4,7 @@ export const Box = styled.div.attrs({
 })`
     margin-top: 4rem;
     margin-bottom: 4rem;
-    border-color: #e29b6d !important;
+    border-color: #fff4ce !important;
     color: #fff4ce;
     .header {
         font-weight: 900;
@@ -42,7 +42,7 @@ export const Box = styled.div.attrs({
 `;
 export const Strength = styled.span.attrs({
 })`
-    color: red;
+    color: #ebbd92;
 `;
 
 export const Img = styled.img.attrs({
