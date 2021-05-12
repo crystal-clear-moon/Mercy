@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import React from 'react'
 import { Header, Mainbox } from '../component/btn.styles'
-import { Box, Strength, Img, RoadMap, BgDiv } from '../component/box.styles'
+import { Box, Strength, Img, RoadMap, BgDiv, BoxContainer, SubBox, StepContainer, SubStep } from '../component/box.styles'
 import Link from 'next/link'
 
 export default function Home() {
@@ -69,47 +69,84 @@ export default function Home() {
               <div className="header flex">
                 <div className="text-2xl sm:text-4xl lg:text-6xl">About Treate Token</div>
               </div>
-              <div>
-                <p>
-                  <Strength>⦿ SHIB</Strength> is an experiment in decentralized spontaneous community building. SHIB token is our first token and allows users to hold Billions or even Trillions of them.  Nicknamed the DOGECOIN KILLER, this ERC-20 ONLY token can remain well under a penny and still outpace Dogecoin in a small amount of time (relatively speaking). Popular worldwide, and already up thousands of percent, Shiba token ($Shib) is the first cryptocurrency token to be listed and incentivized on ShibaSwap, our decentralized exchange.   
-                </p>
-                <p>
-                  We locked the 50% of the total supply to Uniswap and threw away the keys! 
-                  The remaining 50% was burned to Vitalik Buterin and we were the first project following this path, so everyone has to buy on the open market, ensuring a fair and complete distribution where devs don't own team tokens they can dump on the community.
-                </p>
-                <p>
-                  <Strength>⦿  LEASH</Strength>  was originally set to be a rebase token pegged to the price of Dogecoin. Now, it has been unleashed and will not rebase. 
-                  With a total circulation of ONLY 100k tokens, it has the opposite appeal to Shib (which has a much larger supply). 
-                  The second token incentivized on the swap offers special rewards for those who provide liquidity.  
-                </p>
-                <p>
-                  <Strength>⦿ BONE</Strength> Dogecoin Killer is our next token! <Strength>COMING SOON</Strength>, Shiba Inu Bone, takes the power of Defi to the next level. 
-                  Details on how to acquire this token, tokenomics and incentives will be announced with the reveal of ShibaSwap.
-                </p>
-              </div>
+              <BoxContainer>
+                <SubBox>
+                  <div className="box-header">Community Powerd</div>
+                  <div className="box-body">
+                    <Strength>⦿ SHIB</Strength> is an experiment in decentralized spontaneous community building. SHIB token is our first token and allows users to hold Billions or even Trillions of them.  Nicknamed the DOGECOIN KILLER, this ERC-20 ONLY token can remain well under a penny and still outpace Dogecoin in a small amount of time (relatively speaking). Popular worldwide, and already up thousands of percent, Shiba token ($Shib) is the first cryptocurrency token to be listed and incentivized on ShibaSwap, our decentralized exchange.   
+                  </div>
+                </SubBox>
+                <SubBox>
+                  <div className="box-header">Community Powerd</div>
+                  <div className="box-body">
+                    We locked the 50% of the total supply to Uniswap and threw away the keys! 
+                    The remaining 50% was burned to Vitalik Buterin and we were the first project following this path, so everyone has to buy on the open market, ensuring a fair and complete distribution where devs don't own team tokens they can dump on the community.
+                  </div>
+                </SubBox>
+                <SubBox>
+                  <div className="box-header">Community Powerd</div>
+                  <div className="box-body">
+                    <Strength>⦿  LEASH</Strength>  was originally set to be a rebase token pegged to the price of Dogecoin. Now, it has been unleashed and will not rebase. 
+                    With a total circulation of ONLY 100k tokens, it has the opposite appeal to Shib (which has a much larger supply). 
+                    The second token incentivized on the swap offers special rewards for those who provide liquidity.  
+                  </div>
+                </SubBox>
+              </BoxContainer>
             </Box>
           </div>
           <div id="howto" className="w-full flex justify-center bg-black" >
             <Box>
-              <div className="header flex">
+              <div className="header">
                 <div className="text-2xl sm:text-4xl lg:text-6xl">
                   HO​W TO BUY
                 </div>
+                <div className="header-desc">
+                  Follow these steps or join our <Strength>Telegram</Strength> group if you need help
+                </div>
               </div>
-              <div>
-                <p>
-                  The only place to buy or sell <Strength>SHIB</Strength> or <Strength>LEASH</Strength> safely is on Uniswap. 
-                  There are some centralized exchanges that have listed SHIB, but CEXs have a history of locking funds. 
-                  If you can, it is safer to trade on a decentralized exchange like Uniswap or 1inch.
-                </p>
-                <p>
-                  <Strength>BONE</Strength> is not available yet , but will be able to acquire soon.
-                </p>
-                <p>
-                  See the Live Chart analytics: 
-                  <Strength>SHIB</Strength> / <Strength>LEASH</Strength>
-                </p>
-              </div>
+              <StepContainer>
+                <SubStep>
+                  <div className="step-head">
+                    <span className="step-num">1</span>
+                    Create a MetaMask Wallet
+                  </div>
+                  <div className="step-body">
+                      $KISHU token is available on the Ethereum blockchain.
+                      MetaMask is the market leader in ERC20 (Ethereum) wallets.
+                      On Google Chrome, visit <Strength>metamask.io</Strength> to download the extension and set up a wallet.
+                      On mobile? Get MetaMask's app for <Strength>iPhone</Strength> or <Strength>Android</Strength>.
+                  </div>
+                </SubStep>
+                <SubStep>
+                  <div className="step-head">
+                    <span className="step-num">2</span>
+                    Send $ETH to MetaMask
+                  </div>
+                  <div className="step-body">
+                    Buy Ethereum through MetaMask or transfer it to your MetaMask wallet address from another wallet (e.g. Coinbase or Binance).
+                  </div>
+                </SubStep>
+                <SubStep>
+                  <div className="step-head">
+                    <span className="step-num">3</span>
+                    Visit KISHU Swap
+                  </div>
+                  <div className="step-body">
+                    The only place to buy or sell <Strength>SHIB</Strength> or <Strength>LEASH</Strength> safely is on Uniswap. 
+                    There are some centralized exchanges that have listed SHIB, but CEXs have a history of locking funds. 
+                    If you can, it is safer to trade on a decentralized exchange like Uniswap or 1inch.
+                  </div>
+                </SubStep>
+                <SubStep>
+                  <div className="step-head">
+                    <span className="step-num">4</span>
+                    Swap $ETH for $KISHU
+                  </div>
+                  <div className="step-body">
+                    Enter the amount of $ETH you would like to swap for $KISHU. Click Connect Wallet then Swap
+                  </div>
+                </SubStep>
+              </StepContainer>
             </Box>
           </div>
         </div>

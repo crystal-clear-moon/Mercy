@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 export const Box = styled.div.attrs({
-    className: "m-1 sm:m-6 p-4 sm:p-12 my-auto text-xl bg-transparent rounded-3xl border-0 max-w-screen-xl sm:border-8"
+    className: "m-1 sm:m-6 p-4 sm:p-12 my-auto text-xl bg-transparent rounded-3xl max-w-screen-xl"
 })`
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -10,7 +10,7 @@ export const Box = styled.div.attrs({
         font-weight: 900;
         font-size: 6rem;
         line-height: 1.1;
-        padding-bottom: 5rem;
+        padding-bottom: 3rem;
         font-family: Roboto,sans-serif;
         img {
             height: fit-content;
@@ -18,6 +18,10 @@ export const Box = styled.div.attrs({
         }
         @media only screen and (max-width: 425px) {
             padding-bottom: 2rem;
+        }
+        .header-desc {
+            margin-top: 0.5rem;
+            font-size: 1.7rem;
         }
     }
     div {
@@ -95,5 +99,59 @@ export const BgDiv = styled.div.attrs({
     top: 0;
     left: 0;
     right: 0;
+}
+`;
+
+export const BoxContainer = styled.div.attrs({
+    className: "flex flex-wrap"
+})`
+
+}
+`;
+
+export const SubBox = styled.div.attrs({
+    className: "bg-black flex flex-col items-center"
+})`
+    width: 30%;
+    margin: 1rem;
+    padding: 2rem;
+    @media only screen and (max-width: 1024px) {
+        width: 100%;
+        margin: 2rem 2rem;
+    }
+    @media only screen and (max-width: 425px) {
+        width: 100%;
+        margin: 1rem 0rem;
+        padding: 1rem;
+    }
+    .box-header {
+        font-size: 1.75rem;
+        color: #ebbd92;
+        margin-bottom: 2rem;
+    }
+}
+`;
+
+export const StepContainer = styled.div.attrs({
+    className: ""
+})`
+
+}
+`;
+
+export const SubStep = styled.div.attrs({
+    className: ""
+})`
+    .step-head {
+        padding: 1rem 0rem;
+        color: #ebbd92;
+        .step-num {
+            padding: 0.2rem 0.7rem;
+            margin-right: 0.4rem;
+            border-radius: 50%;
+            background-color: #ebbd92;
+            color: black;
+        }
+    }
 }
 `;
