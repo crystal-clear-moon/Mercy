@@ -1,11 +1,26 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import React from 'react'
 import { Header } from '../component/btn.styles'
 import { Box, Strength, Img, RoadMap, BgDiv } from '../component/box.styles'
 import Link from 'next/link'
 
 export default function Home() {
+
+  React.useEffect(() => {
+    var headerId = document.getElementById("headerId");
+
+    var myScrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 1) {
+            headerId.className = "hidden"
+        } else {
+            headerId.className = "block"
+        }
+    };
+    window.addEventListener("scroll", myScrollFunc);
+  }, [])
   return (
     <div>
       <Head>
@@ -14,30 +29,32 @@ export default function Home() {
         <link rel="icon" href="https://www.shibatoken.com/img/shib_logo_header.png" />
       </Head>
       <div>
-        <div className="bg-blue-500 flex justify-around">
-          <div className="flex my-auto p-2">
-            <Link href="#">
-              <img style={{height: "fit-content"}} src="https://www.shibatoken.com/img/shib_logo_header.png" />
-            </Link>
-            <div className="my-auto text-2xl text-white hover:cursor-pointer hover:text-white">TREAT TOKEN</div>
-          </div>
-          <div className="hidden sm:flex items-center">
-            <div>
-              <Link href="#about">
-                <Header>
-                  About
-                </Header>
+        <div id="headerId" className="hidden">
+          <div className="bg-blue-500 flex justify-around">
+            <div className="flex my-auto p-2">
+              <Link href="#">
+                <img style={{height: "fit-content"}} src="https://www.shibatoken.com/img/shib_logo_header.png" />
               </Link>
-              <Link href="#howto">
-                <Header>
-                  How to Buy
-                </Header>
-              </Link>
-              <Link href="#roadmap">
-                <Header>
-                  Road Map
-                </Header>
-              </Link>
+              <div className="my-auto text-2xl text-white hover:cursor-pointer hover:text-white">TREAT TOKEN</div>
+            </div>
+            <div className="hidden sm:flex items-center">
+              <div>
+                <Link href="#about">
+                  <Header>
+                    About
+                  </Header>
+                </Link>
+                <Link href="#howto">
+                  <Header>
+                    How to Buy
+                  </Header>
+                </Link>
+                <Link href="#roadmap">
+                  <Header>
+                    Road Map
+                  </Header>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
