@@ -13,9 +13,9 @@ export default function Home() {
       var headerId = document.getElementById("headerId");
       var y = window.scrollY;
       if (y >= 1) {
-        headerId.className = "opacity-100 fixed w-full transition-opacity"
+        headerId.className = "opacity-100 fixed w-full transition-opacity duration-900"
       } else {
-        headerId.className = "opacity-0 fixed w-full transition-opacity"
+        headerId.className = "opacity-0 fixed w-full transition-opacity duration-900"
       }
     };
     window.addEventListener("scroll", myScrollFunc);
@@ -28,7 +28,7 @@ export default function Home() {
         <link rel="icon" href="https://www.shibatoken.com/img/shib_logo_header.png" />
       </Head>
       <div>
-        <div id="headerId" className="opacity-0 fixed w-full transition-opacity">
+        <div id="headerId" className="opacity-0 fixed w-full transition-opacity duration-900">
           <div className="bg-blue-500 flex justify-around">
             <div className="flex my-auto p-2">
               <Link href="#">
