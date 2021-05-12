@@ -13,7 +13,7 @@ export default function Home() {
 
     var myScrollFunc = function () {
         var y = window.scrollY;
-        if (y >= 20) {
+        if (y >= 1) {
             headerId.className = "block"
         } else {
             headerId.className = "hidden"
