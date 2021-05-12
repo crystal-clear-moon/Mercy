@@ -4,8 +4,8 @@ export const Box = styled.div.attrs({
 })`
     margin-top: 4rem;
     margin-bottom: 4rem;
-    border-color: orange !important;
-    color: orange;
+    border-color: #e29b6d !important;
+    color: #fff4ce;
     .header {
         font-weight: 900;
         font-size: 6rem;
@@ -22,7 +22,7 @@ export const Box = styled.div.attrs({
     }
     div {
         p {
-            color: #FFA500;
+            color: #fff4ce;
             padding-top: 1rem;
         }
     }
@@ -46,13 +46,14 @@ export const Strength = styled.span.attrs({
 `;
 
 export const Img = styled.img.attrs({
-    className: "w-10/12 sm:w-4/12 lg:w-4/12"
+    className: ""
 })`
     height: fit-content;
+    width: 445px;
 `;
 
 export const RoadMap = styled.div.attrs({
-    className:"text-xl text-yellow-500 text-center flex flex-wrap justify-around"
+    className:"text-xl text-center flex flex-wrap justify-around"
 })`
     .phase {
         align-items: start;
@@ -67,6 +68,7 @@ export const RoadMap = styled.div.attrs({
         .step {
             display: flex;
             text-align: start;
+            color: #fff4ce;
             svg {
                 margin-right: 1rem;
             }

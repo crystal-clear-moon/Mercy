@@ -8,33 +8,21 @@ import Link from 'next/link'
 
 export default function Home() {
 
-  React.useEffect(() => {
-    var myScrollFunc = function () {
-      var headerId = document.getElementById("headerId");
-      var y = window.scrollY;
-      if (y >= 1) {
-        headerId.className = "opacity-100 fixed w-full transition-opacity duration-1000 z-50"
-      } else {
-        headerId.className = "opacity-0 fixed w-full transition-opacity duration-1000 height: 100px"
-      }
-    };
-    window.addEventListener("scroll", myScrollFunc);
-  }, [])
   return (
     <div>
       <Head>
         <title>Treat Token</title>
         <meta name="description" content="Shiba token" />
-        <link rel="icon" href="https://www.shibatoken.com/img/shib_logo_header.png" />
+        <link rel="icon" href="/logo.png" />
       </Head>
       <div>
-        <div id="headerId" className="opacity-0 fixed w-full transition-opacity duration-1000 height: 100px">
-          <div className="bg-blue-500 flex justify-around">
+        <div className="fixed w-full transition-color duration-1000 z-50 bg-black">
+          <div className="flex justify-around">
             <div className="flex my-auto p-2">
               <Link href="#">
-                <img style={{height: "fit-content"}} src="https://www.shibatoken.com/img/shib_logo_header.png" />
+                <img width="42" style={{height: "fit-content", padding: "1.5rem 0rem"}} src="/logo.png" />
               </Link>
-              <div className="my-auto text-2xl text-red hover:cursor-pointer hover:text-white">TREAT TOKEN</div>
+              <div className="my-auto text-2xl hover:cursor-pointer" style={{color: "#fff4ce"}}>TREAT TOKEN</div>
             </div>
             <div className="hidden sm:flex items-center">
               <div>
@@ -58,26 +46,27 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <div className="flex justify-around flex-col sm:flex-row bg-gray-900 min-h-screen max-h-screen h-screen">
-            <div className="my-auto px-6">
-              <p className="text-yellow-500 text-xl sm:text-2xl lg:text-4xl">
-                Decentralized Meme Tokens <br />
-                that grew into a vibrant ecosystem 
-              </p>
-              <p className="text-yellow-500 text-xl sm:text-2xl lg:text-4xl">
+          <div className="flex justify-center flex-col sm:flex-row bg-black min-h-screen max-h-screen h-screen " style={{minWidth: "1024px"}}>
+            <div className="my-auto px-6 mr-24">
+              <h1 className="text-2xl sm:text-3xl lg:text-6xl" style={{color: "#fff4ce"}}>
+                Little meme.
+                <br />
+                Big dream. 
+              </h1> <br />
+              <p className="text-lg sm:text-xl lg:text-2xl" style={{color: "#fff4ce"}}>
                 ShibaSwap. Fun tokens. Artist incubator.<br/> Growing 260k+ Community <br /> & more on the horizon!
-              </p>
-              <button className="text-red bg-gray-500 mt-12 py-2 px-4">READ OUR WOOFPAPER</button>
+              </p><br />
+              <span className="bg-gray-200 text-xl mt-12 py-2 px-6 rounded-lg" style={{color: "black", backgroundColor: "#ebbd93" }}>Buy $TSUKI</span>
             </div>
-            <Img src="https://www.shibatoken.com/img/shib_ch_le.png" />
+            <div className="flex items-center justify-center ml-24">
+              <Img src="/logo.png" />
+            </div>
           </div>
-          <BgDiv src="/svg/back.svg" />
         </div>
         <div className="flex flex-col items-center">
-          <div id="about" className="w-full flex justify-center bg-gray-800">
+          <div id="about" className="w-full flex justify-center" style={{backgroundColor: '#0e0e0e'}}>
             <Box>
               <div className="header flex">
-                <img width="auto" height="fit-content" src="https://www.shibatoken.com/img/shib_logo_header.png" />
                 <div className="text-2xl sm:text-4xl lg:text-6xl">About Treate Token</div>
               </div>
               <div>
@@ -100,10 +89,9 @@ export default function Home() {
               </div>
             </Box>
           </div>
-          <div id="howto" className="w-full flex justify-center bg-gray-900">
+          <div id="howto" className="w-full flex justify-center bg-black" >
             <Box>
               <div className="header flex">
-                <img src="https://www.shibatoken.com/img/shib_logo_header.png" />
                 <div className="text-2xl sm:text-4xl lg:text-6xl">
                   HO​W TO BUY
                 </div>
@@ -125,8 +113,8 @@ export default function Home() {
             </Box>
           </div>
         </div>
-        <div id="roadmap" className="flex flex-col items-center text-pink-100 bg-gray-800">
-          <h1 className="text-2xl sm:text-4xl lg:text-6xl text-yellow-400  pt-28 sm:pt-14">
+        <div id="roadmap" className="flex flex-col items-center text-pink-100" style={{backgroundColor: "#0e0e0e"}}>
+          <h1 className="text-2xl sm:text-4xl lg:text-6xl  pt-28 sm:pt-14" style={{color: "#fff4ce"}}>
             Road Map
           </h1>
           <RoadMap>
@@ -241,18 +229,18 @@ export default function Home() {
           </RoadMap>
         </div>
         <div id="community" className="flex flex-col items-center pb-24 text-pink-100 pt-12 px-2 bg-gray-800">
-          <h1 className="text-2xl sm:text-4xl lg:text-6xl text-yellow-700">
+          <h1 className="text-2xl sm:text-4xl lg:text-6xl" style={{color: "#fff4ce"}}>
             COMMUNITY
           </h1>
-          <div className="text-xl text-yellow-500 text-center my-4">
+          <div className="text-xl text-center my-4" style={{color: "#fff4ce"}}>
             Our community keeps growing everyday.  Please join our social platforms to get updates using the links below. <br/>
             There are 25k+ people in our different groups! 
           </div>
-          <div className="text-xl text-yellow-500 text-center">
+          <div className="text-xl text-center" style={{color: "#fff4ce"}}>
             You can connect with us from anywhere in the world because we have international groups for foreign language speakers. 
           </div>
         </div>
-        <div className="flex py-6 justify-center bg-blue-500">
+        <div className="flex py-6 justify-center bg-black">
           <div className="flex justify-around w-8/12 flex-col sm:flex-row">
             <Header>
               Price Chart
