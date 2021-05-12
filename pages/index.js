@@ -228,7 +228,7 @@ export default function Home() {
             </div>
           </RoadMap>
         </div>
-        <div id="community" className="flex flex-col items-center pb-24 text-pink-100 pt-12 px-2 bg-gray-800">
+        <div id="community" className="flex flex-col items-center pb-24 text-pink-100 pt-12 px-2 bg-black">
           <h1 className="text-2xl sm:text-4xl lg:text-6xl" style={{color: "#fff4ce"}}>
             COMMUNITY
           </h1>
