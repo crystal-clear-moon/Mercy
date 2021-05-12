@@ -34,7 +34,7 @@ export default function Home() {
               <Link href="#">
                 <img style={{height: "fit-content"}} src="https://www.shibatoken.com/img/shib_logo_header.png" />
               </Link>
-              <div className="my-auto text-2xl text-white hover:cursor-pointer hover:text-white">TREAT TOKEN</div>
+              <div className="my-auto text-2xl text-red hover:cursor-pointer hover:text-white">TREAT TOKEN</div>
             </div>
             <div className="hidden sm:flex items-center">
               <div>
