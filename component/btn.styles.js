@@ -26,6 +26,7 @@ export const MediaIcon = styled.a.attrs({
     padding: 0rem 0.7rem;
     &:hover {
         cursor: pointer;
+        color: #fff4ce;
     }
     @media only screen and (max-width: 1024px) {
         padding: 0rem 0.4rem;
