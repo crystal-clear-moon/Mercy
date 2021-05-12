@@ -57,18 +57,21 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-around flex-col sm:flex-row bg-gray-900">
-          <div className="my-auto px-6">
-            <p className="text-yellow-500 text-xl sm:text-2xl lg:text-4xl">
-              Decentralized Meme Tokens <br />
-              that grew into a vibrant ecosystem 
-            </p>
-            <p className="text-yellow-500 text-xl sm:text-2xl lg:text-4xl">
-              ShibaSwap. Fun tokens. Artist incubator.<br/> Growing 260k+ Community <br /> & more on the horizon!
-            </p>
-            <button className="text-red bg-gray-500 mt-12 py-2 px-4">READ OUR WOOFPAPER</button>
+        <div>
+          <div className="flex justify-around flex-col sm:flex-row bg-gray-900 min-h-screen max-h-screen h-screen">
+            <div className="my-auto px-6">
+              <p className="text-yellow-500 text-xl sm:text-2xl lg:text-4xl">
+                Decentralized Meme Tokens <br />
+                that grew into a vibrant ecosystem 
+              </p>
+              <p className="text-yellow-500 text-xl sm:text-2xl lg:text-4xl">
+                ShibaSwap. Fun tokens. Artist incubator.<br/> Growing 260k+ Community <br /> & more on the horizon!
+              </p>
+              <button className="text-red bg-gray-500 mt-12 py-2 px-4">READ OUR WOOFPAPER</button>
+            </div>
+            <Img src="https://www.shibatoken.com/img/shib_ch_le.png" />
           </div>
-          <Img src="https://www.shibatoken.com/img/shib_ch_le.png" />
+          <BgDiv src="/svg/back.svg" />
         </div>
         <div className="flex flex-col items-center">
           <div id="about" className="w-full flex justify-center bg-gray-800">
