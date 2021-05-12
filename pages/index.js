@@ -13,7 +13,7 @@ export default function Home() {
       var headerId = document.getElementById("headerId");
       var y = window.scrollY;
       if (y >= 1) {
-        headerId.className = "opacity-100 fixed w-full transition-opacity duration-1000"
+        headerId.className = "opacity-100 fixed w-full transition-opacity duration-1000 z-50"
       } else {
         headerId.className = "opacity-0 fixed w-full transition-opacity duration-1000 height: 100px"
       }
