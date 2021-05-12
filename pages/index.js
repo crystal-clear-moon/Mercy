@@ -2,9 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import React from 'react'
-import { Header, Mainbox } from '../component/btn.styles'
+import { Header, Mainbox, MediaIcon } from '../component/btn.styles'
 import { Box, Strength, Img, RoadMap, BgDiv, BoxContainer, SubBox, StepContainer, SubStep } from '../component/box.styles'
 import Link from 'next/link'
+import { FaTelegramPlane, FaRedditAlien, FaTwitter, FaInstagram, FaYoutube, FaMediumM, FaGithub } from "react-icons/fa";
 
 export default function Home() {
 
@@ -56,7 +57,46 @@ export default function Home() {
               <p className="text-lg sm:text-xl lg:text-2xl" style={{color: "#fff4ce"}}>
                 ShibaSwap. Fun tokens. Artist incubator.<br/> Growing 260k+ Community <br /> & more on the horizon!
               </p><br />
-              <span className="bg-gray-200 text-xl mt-12 py-2 px-6 rounded-lg" style={{color: "black", backgroundColor: "#ebbd93" }}>Buy $TSUKI</span>
+              <div className="flex mt-12 items-center flex-col lg:flex-row">
+                <span className="bg-gray-200 text-xl py-2 px-6 rounded-lg mr-4" style={{color: "black", backgroundColor: "#ebbd93" }}>Buy $TSUKI</span>
+                <div className="flex lg:mt-0 mt-6">
+                  <Link href="#howto">
+                    <MediaIcon>
+                      <FaTelegramPlane />
+                    </MediaIcon>
+                  </Link>
+                  <Link href="/">
+                    <MediaIcon className="border-l border-r border-white">
+                      <FaRedditAlien />
+                    </MediaIcon>
+                  </Link>
+                  <Link href="/">
+                    <MediaIcon>
+                      <FaTwitter />
+                    </MediaIcon>
+                  </Link>
+                  <Link href="/">
+                    <MediaIcon className="border-l border-r border-white">
+                      <FaInstagram />
+                    </MediaIcon>
+                  </Link>
+                  <Link href="/">
+                    <MediaIcon>
+                      <FaYoutube />
+                    </MediaIcon>
+                  </Link>
+                  <Link href="/">
+                    <MediaIcon className="border-l border-r border-white">
+                      <FaMediumM />
+                    </MediaIcon>
+                  </Link>
+                  <Link href="/">
+                  <MediaIcon>
+                    <FaGithub />
+                  </MediaIcon>
+                </Link>
+                </div>
+              </div>
             </div>
             <div className="flex items-center justify-center ml-24">
               <Img src="/logo.png" />

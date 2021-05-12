@@ -18,7 +18,16 @@ export const Mainbox = styled.div.attrs({
     @media only screen and (max-width: 425px) {
         minWidth: 425px;
     }
-    @media only screen and (max-width: 425px) {
-        minWidth: 425px;
+`;
+
+export const MediaIcon = styled.a.attrs({
+})`
+    color: white;
+    padding: 0rem 0.7rem;
+    &:hover {
+        cursor: pointer;
+    }
+    @media only screen and (max-width: 1024px) {
+        padding: 0rem 0.4rem;
     }
 `;
