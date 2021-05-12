@@ -57,21 +57,21 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-around flex-col sm:flex-row">
+        <div className="flex justify-around flex-col sm:flex-row bg-gray-900">
           <div className="my-auto px-6">
-            <p className="text-yellow-800 text-xl sm:text-2xl lg:text-4xl">
+            <p className="text-yellow-300 text-xl sm:text-2xl lg:text-4xl">
               Decentralized Meme Tokens <br />
               that grew into a vibrant ecosystem 
             </p>
-            <p className="text-yellow-800 text-xl sm:text-2xl lg:text-4xl">
+            <p className="text-yellow-300 text-xl sm:text-2xl lg:text-4xl">
               ShibaSwap. Fun tokens. Artist incubator.<br/> Growing 260k+ Community <br /> & more on the horizon!
             </p>
-            <button className="text-white mt-12 py-2 px-4">READ OUR WOOFPAPER</button>
+            <button className="text-white bg-gray-500 mt-12 py-2 px-4">READ OUR WOOFPAPER</button>
           </div>
           <Img src="https://www.shibatoken.com/img/shib_ch_le.png" />
         </div>
-        <div className="pb-28 sm:pb-14 flex flex-col items-center">
-          <div className="w-full flex justify-center">
+        <div className="flex flex-col items-center">
+          <div className="w-full flex justify-center bg-gray-800">
             <Box id="about">
               <div className="header flex">
                 <img width="auto" height="fit-content" src="https://www.shibatoken.com/img/shib_logo_header.png" />
@@ -97,7 +97,7 @@ export default function Home() {
               </div>
             </Box>
           </div>
-          <div className="w-full flex justify-center">
+          <div className="w-full flex justify-center bg-gray-900">
             <Box id="howto">
               <div className="header flex">
                 <img src="https://www.shibatoken.com/img/shib_logo_header.png" />
@@ -122,8 +122,8 @@ export default function Home() {
             </Box>
           </div>
         </div>
-        <div id="roadmap" className="flex flex-col items-center text-pink-100">
-          <h1 className="text-2xl sm:text-4xl lg:text-6xl text-yellow-700">
+        <div id="roadmap" className="flex flex-col items-center text-pink-100 bg-gray-800">
+          <h1 className="text-2xl sm:text-4xl lg:text-6xl text-yellow-400  pt-28 sm:pt-14">
             Road Map
           </h1>
           <RoadMap>
@@ -237,7 +237,7 @@ export default function Home() {
             </div>
           </RoadMap>
         </div>
-        <div id="community" className="flex flex-col items-center pb-24 text-pink-100 pt-12 px-2">
+        <div id="community" className="flex flex-col items-center pb-24 text-pink-100 pt-12 px-2 bg-gray-800">
           <h1 className="text-2xl sm:text-4xl lg:text-6xl text-yellow-700">
             COMMUNITY
           </h1>

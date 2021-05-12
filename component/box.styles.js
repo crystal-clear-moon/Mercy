@@ -22,7 +22,7 @@ export const Box = styled.div.attrs({
     }
     div {
         p {
-            color: #110000;
+            color: #FFA500;
             padding-top: 1rem;
         }
     }
@@ -42,7 +42,7 @@ export const Box = styled.div.attrs({
 `;
 export const Strength = styled.span.attrs({
 })`
-    color: brown;
+    color: red;
 `;
 
 export const Img = styled.img.attrs({
@@ -61,7 +61,8 @@ export const RoadMap = styled.div.attrs({
         width: 23%;
         margin: 2rem 0rem;
         .header {
-            color: black;
+            color: white;
+            padding-bottom: 1rem;
         }
         .step {
             display: flex;
