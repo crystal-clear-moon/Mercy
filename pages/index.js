@@ -71,8 +71,8 @@ export default function Home() {
           <Img src="https://www.shibatoken.com/img/shib_ch_le.png" />
         </div>
         <div className="flex flex-col items-center">
-          <div className="w-full flex justify-center bg-gray-800">
-            <Box id="about">
+          <div id="about" className="w-full flex justify-center bg-gray-800">
+            <Box>
               <div className="header flex">
                 <img width="auto" height="fit-content" src="https://www.shibatoken.com/img/shib_logo_header.png" />
                 <div className="text-2xl sm:text-4xl lg:text-6xl">About Treate Token</div>
@@ -97,8 +97,8 @@ export default function Home() {
               </div>
             </Box>
           </div>
-          <div className="w-full flex justify-center bg-gray-900">
-            <Box id="howto">
+          <div id="howto" className="w-full flex justify-center bg-gray-900">
+            <Box>
               <div className="header flex">
                 <img src="https://www.shibatoken.com/img/shib_logo_header.png" />
                 <div className="text-2xl sm:text-4xl lg:text-6xl">
