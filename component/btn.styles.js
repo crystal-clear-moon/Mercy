@@ -10,3 +10,15 @@ export const Header = styled.a.attrs({
         color: #e29b6d;
     }
 `;
+
+export const Mainbox = styled.div.attrs({
+    className: "flex justify-center flex-col sm:flex-row bg-black min-h-screen max-h-screen h-screen"
+})`
+    minWidth: 1024px;
+    @media only screen and (max-width: 425px) {
+        minWidth: 425px;
+    }
+    @media only screen and (max-width: 425px) {
+        minWidth: 425px;
+    }
+`;

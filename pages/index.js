@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import React from 'react'
-import { Header } from '../component/btn.styles'
+import { Header, Mainbox } from '../component/btn.styles'
 import { Box, Strength, Img, RoadMap, BgDiv } from '../component/box.styles'
 import Link from 'next/link'
 
@@ -46,7 +46,7 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <div className="flex justify-center flex-col sm:flex-row bg-black min-h-screen max-h-screen h-screen" style={{minWidth: "1024px"}}>
+          <Mainbox>
             <div className="my-auto px-6 mr-24">
               <h1 className="text-2xl sm:text-3xl lg:text-6xl" style={{color: "#fff4ce"}}>
                 Little meme.
@@ -61,7 +61,7 @@ export default function Home() {
             <div className="flex items-center justify-center ml-24">
               <Img src="/logo.png" />
             </div>
-          </div>
+          </Mainbox>
         </div>
         <div className="flex flex-col items-center">
           <div id="about" className="w-full flex justify-center" style={{backgroundColor: '#0e0e0e'}}>
