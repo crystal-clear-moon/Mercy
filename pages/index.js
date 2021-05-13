@@ -10,13 +10,35 @@ import { MainContainer, MoonContainer, EleContainer, LeftContainer, RightContain
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 
 export default function Home() {
-
+  React.useEffect(() => {
+    const callback = function (entries) {
+      entries.forEach((entry) => {
+        console.log(entry);
+    
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-fadeIn");
+        } else {
+          entry.target.classList.remove("animate-fadeIn");
+        }
+      });
+    };
+    
+    const observer = new IntersectionObserver(callback);
+    
+    const targets = document.querySelectorAll(".js-show-on-scroll");
+    targets.forEach(function (target) {
+      target.classList.add("opacity-0");
+      observer.observe(target);
+    });
+  }, []);
+  
   return (
     <ParallaxProvider>
       <Head>
         <title>Treat Token</title>
         <meta name="description" content="Shiba token" />
         <link rel="icon" href="/head-logo.png" />
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
       </Head>
       <MainContainer>
         <div className="flex flex-col items-center">
@@ -123,7 +145,7 @@ export default function Home() {
       <div className="flex flex-col items-center">
         <div id="about" className="w-full flex justify-center">
           <Box>
-            <div className="header flex">
+            <div className="header flex" style={{marginBottom: "100px"}}>
               <div className="text-2xl sm:text-4xl lg:text-6xl">About Treate Token</div>
             </div>
             <BoxContainer>
@@ -326,14 +348,14 @@ export default function Home() {
         </RoadMap>
       </div>
       <div id="community" className="flex flex-col items-center pb-24 text-pink-100 pt-12 px-2">
-        <h1 className="text-2xl mb-12 sm:text-4xl lg:text-6xl" style={{color: "#000"}}>
+        <h1 className="text-2xl sm:text-4xl lg:text-6xl text-black" style={{marginBottom: "140px"}}>
           COMMUNITY
         </h1>
-        <div className="text-xl text-center my-4" style={{color: "#000"}}>
+        <div className="text-xl text-center my-4 js-show-on-scroll" style={{color: "#000"}}>
           Our community keeps growing everyday.  Please join our social platforms to get updates using the links below. <br/>
           There are 25k+ people in our different groups! 
         </div>
-        <div className="text-xl text-center" style={{color: "#000"}}>
+        <div className="text-xl text-center js-show-on-scroll" style={{color: "#000"}}>
           You can connect with us from anywhere in the world because we have international groups for foreign language speakers. 
         </div>
       </div>

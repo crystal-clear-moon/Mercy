@@ -105,9 +105,9 @@ export const BgDiv = styled.div.attrs({
 `;
 
 export const BoxContainer = styled.div.attrs({
-    className: "flex flex-wrap"
+    className: "flex flex-wrap js-show-on-scroll"
 })`
-
+    marginTop: 100px;
 }
 `;
 
@@ -137,7 +137,7 @@ export const SubBox = styled.div.attrs({
         font-family: "Montserrat", sans-serif;
         text-align: center;
         font-weight: 100;
-        color: #444;
+        color: #415076;
     }
     .box-img {
         width: 25%;
@@ -151,14 +151,14 @@ export const SubBox = styled.div.attrs({
 `;
 
 export const StepContainer = styled.div.attrs({
-    className: ""
+    className: "animated fadeInUp"
 })`
-
+    margin-top: 100px !important;
 }
 `;
 
 export const SubStep = styled.div.attrs({
-    className: "mb-4"
+    className: "mb-4 js-show-on-scroll"
 })`
     .step-head {
         padding: 1rem 0rem;
