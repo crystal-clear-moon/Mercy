@@ -88,7 +88,7 @@ export const MainContainer = styled.div.attrs({
         display: flex;
     }
     .btn {
-        color: #c3e9fc;
+        color: white;
         padding: 0rem 1rem;
         &:hover {
             cursor: pointer;
