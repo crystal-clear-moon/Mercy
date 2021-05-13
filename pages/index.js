@@ -117,7 +117,7 @@ export default function Home() {
         <Parallax className="star-img" y={[ "-200px", "600px"]} tagOuter="figure">
           <img src="/svg/stars.svg" />
         </Parallax>
-        <Parallax className="moon-img" y={[ "-250px", "450px"]} tagOuter="figure">
+        <Parallax className="moon-img" y={[ "-250px", "500px"]} tagOuter="figure">
           <div className="img">
             <MoonContainer>
               <div className="moon-title">
@@ -175,7 +175,7 @@ export default function Home() {
             </BoxContainer>
           </Box>
         </div>
-        <div id="howto" className="w-full flex justify-center" >
+        <div id="howto" className="w-full flex justify-center bg-gray-100" >
           <Box>
             <div className="header">
               <div className="text-2xl sm:text-4xl lg:text-6xl">
@@ -346,7 +346,7 @@ export default function Home() {
           </div>
         </RoadMap>
       </div>
-      <div id="community" className="flex flex-col items-center pb-24 text-pink-100 pt-12 px-2">
+      <div id="community" className="flex flex-col items-center pb-24 text-pink-100 pt-12 px-2 bg-gray-100">
         <h1 className="text-2xl sm:text-4xl lg:text-6xl text-black" style={{marginBottom: "140px"}}>
           COMMUNITY
         </h1>
