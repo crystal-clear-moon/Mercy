@@ -20,9 +20,9 @@ export const MainContainer = styled.div.attrs({
     .middle-img {
         width: 100%;
         position: absolute;
-        top: 0;
+        top: 0px;
         left: 0;
-        margin-top: 20rem;
+        margin-top: 430px;
         img {
             width: 60px;
             margin-right: auto;
