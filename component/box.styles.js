@@ -194,6 +194,7 @@ export const SubStep = styled.div.attrs({
         height: 0.5rem;
         background-color: #ddd;
         margin-top: 2rem;
+        border-radius: 0.25rem;
     }
 }
 `;
