@@ -222,7 +222,7 @@ export default function Home() {
         <img src="/rocket.png" className="rocket" />
         <div className="fade-back"></div>
       </MainContainer>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center mt-24">
         <div id="about" className="w-full flex justify-center">
           <Box>
             <div className="header flex" style={{marginBottom: "100px"}}>
@@ -253,7 +253,7 @@ export default function Home() {
             </BoxContainer>
           </Box>
         </div>
-        <div id="howto" className="w-full flex justify-center bg-gray-100" >
+        <div id="howto" className="w-full flex justify-center bg-gray-100 py-48" >
           <HowTo>
             <div className="header">
               <div className="currency">
@@ -336,7 +336,7 @@ export default function Home() {
           </HowTo>
         </div>
       </div>
-      <div id="roadmap" className="flex flex-col items-center text-pink-100 mt-12">
+      <div id="roadmap" className="flex flex-col items-center text-pink-100 my-48">
         <SectionTitle>
           Moon Map
         </SectionTitle>

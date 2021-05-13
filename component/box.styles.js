@@ -208,6 +208,7 @@ export const HowTo = styled.div.attrs({
     font-weight: bold;
     .header {
         text-align: center;
+        margin-bottom: 4rem;
         .currency {
             font-size: 1.25rem;
         }
