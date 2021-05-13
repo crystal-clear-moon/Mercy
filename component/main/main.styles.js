@@ -4,10 +4,19 @@ export const MainContainer = styled.div.attrs({
 })`
     min-height: 100vh;
     overflow: hidden;
-    background-image: linear-gradient(to bottom, #151a2a 0%, #56334a 98%, #a6839a 99%, white 100%);
+    background-image: linear-gradient(to bottom, #151a2a, #56334a);
     background-repeat:no-repeat;
     background-position: center center;
     position: relative;
+    .fade-back {
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        background-image: linear-gradient(to bottom, #ffffff00 0%, #ffffffff 100%);
+    }
     .middle-img {
         width: 100%;
         position: absolute;
@@ -23,7 +32,7 @@ export const MainContainer = styled.div.attrs({
     .star-img {
         width: 100%;
         position: absolute;
-        top: -1500px;
+        top: -1000px;
         left: 0;
         img {
             width: 100%;
@@ -32,7 +41,7 @@ export const MainContainer = styled.div.attrs({
     .moon-img {
         width: 100%;
         position: absolute;
-        top: -200px;
+        top: -500px;
         left: 0;
         img {
             width: 65vh;

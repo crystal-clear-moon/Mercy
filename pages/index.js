@@ -118,6 +118,7 @@ export default function Home() {
           <img src="/svg/rocket.svg"/>
           <img src="/svg/rocket-trail.svg"/>
         </Parallax>
+        <div className="fade-back"></div>
       </MainContainer>
       <div className="flex flex-col items-center">
         <div id="about" className="w-full flex justify-center">
