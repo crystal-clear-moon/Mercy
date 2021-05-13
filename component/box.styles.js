@@ -128,8 +128,20 @@ export const SubBox = styled.div.attrs({
     }
     .box-header {
         font-size: 1.75rem;
-        color: #c73000;
+        color: black;
         margin-bottom: 2rem;
+        font-weight: 100;
+    }
+    .box-body {
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        font-weight: 100;
+        color: #444;
+    }
+    .box-img {
+        width: 25%;
+        margin: 2rem 0rem;
     }
     &:hover {
         cursor: pointer;
@@ -146,7 +158,7 @@ export const StepContainer = styled.div.attrs({
 `;
 
 export const SubStep = styled.div.attrs({
-    className: ""
+    className: "mb-4"
 })`
     .step-head {
         padding: 1rem 0rem;
@@ -158,6 +170,9 @@ export const SubStep = styled.div.attrs({
             background-color: #c73000;
             color: white;
         }
+    }
+    .step-body {
+        padding-left: 2.5rem;
     }
 }
 `;

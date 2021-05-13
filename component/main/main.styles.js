@@ -32,10 +32,10 @@ export const MainContainer = styled.div.attrs({
     .moon-img {
         width: 100%;
         position: absolute;
-        top: -450px;
+        top: -200px;
         left: 0;
         img {
-            width: 80vh;
+            width: 65vh;
             margin-right: auto;
             margin-left: auto;
         }

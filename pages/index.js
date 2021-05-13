@@ -43,11 +43,11 @@ export default function Home() {
             FOR MOON
           </div>
           <div className="moon-desc">
-            Tsuki Inu($TSUKI) is a community focused, decentralized cryptocurrency with instant rewards for holders. Join the moon mission.
+            Tsuki Inu($TKINU) is a community focused, decentralized cryptocurrency with instant rewards for holders. Join the moon mission.
           </div>
           <div className="flex justify-around mt-4">
-            <div className="rounded-full py-2 px-5 text-white btn-buy">
-              BUY TSUKI
+            <div className="rounded-full py-2 px-5 text-white btn-buy" style={{backgroundColor: "#945b82"}}>
+              BUY $TKINU
             </div>
             <div className="rounded-full py-2 px-5 text-white btn-tele">
               TELEGRAM
@@ -127,12 +127,14 @@ export default function Home() {
             </div>
             <BoxContainer>
               <SubBox>
+                <img className="box-img" src="/icon1.png" />
                 <div className="box-header">Community Powerd</div>
                 <div className="box-body">
-                  <Strength>⦿ SHIB</Strength> is an experiment in decentralized spontaneous community building. SHIB token is our first token and allows users to hold Billions or even Trillions of them.  Nicknamed the DOGECOIN KILLER, this ERC-20 ONLY token can remain well under a penny and still outpace Dogecoin in a small amount of time (relatively speaking). Popular worldwide, and already up thousands of percent, Shiba token ($Shib) is the first cryptocurrency token to be listed and incentivized on ShibaSwap, our decentralized exchange.   
+                  <Strength>⦿ SHIB</Strength> is an experiment in decentralized spontaneous community building. SHIB token is our first token and allows users to hold Billions or even Trillions of them.  Nicknamed the DOGECOIN KILLER
                 </div>
               </SubBox>
               <SubBox>
+                <img className="box-img" src="/icon2.png" />
                 <div className="box-header">Community Powerd</div>
                 <div className="box-body">
                   We locked the 50% of the total supply to Uniswap and threw away the keys! 
@@ -140,6 +142,7 @@ export default function Home() {
                 </div>
               </SubBox>
               <SubBox>
+                <img className="box-img" src="/icon3.png" />
                 <div className="box-header">Community Powerd</div>
                 <div className="box-body">
                   <Strength>⦿  LEASH</Strength>  was originally set to be a rebase token pegged to the price of Dogecoin. Now, it has been unleashed and will not rebase. 
@@ -322,7 +325,7 @@ export default function Home() {
         </RoadMap>
       </div>
       <div id="community" className="flex flex-col items-center pb-24 text-pink-100 pt-12 px-2">
-        <h1 className="text-2xl sm:text-4xl lg:text-6xl" style={{color: "#000"}}>
+        <h1 className="text-2xl mb-12 sm:text-4xl lg:text-6xl" style={{color: "#000"}}>
           COMMUNITY
         </h1>
         <div className="text-xl text-center my-4" style={{color: "#000"}}>
@@ -333,7 +336,7 @@ export default function Home() {
           You can connect with us from anywhere in the world because we have international groups for foreign language speakers. 
         </div>
       </div>
-      <div className="flex py-6 justify-center" style={{backgroundColor: "#fff4ce"}}>
+      <div className="flex py-6 justify-center text-white" style={{backgroundColor: "#161b2b"}}>
           <div className="flex justify-around w-8/12 flex-col sm:flex-row">
             <Header>
               Price Chart
