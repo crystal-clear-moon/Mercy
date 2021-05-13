@@ -45,19 +45,35 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <img className="logo-img" src="/logo.png" />
           <div className="header-title">TSUKI INU</div>
-          <div className="btn-container">
-            <div className="btn">
-              ABOUT
-            </div>
-            <div className="btn">
-              HOW TO BUY
-            </div>
-            <div className="btn">
-              ROAD MAP
-            </div>
-            <div className="btn">
-              TELEGRAM
-            </div>
+          <div className="btn-container z-50">
+            <Link href="#about">
+              <a>
+                <div className="btn">
+                  ABOUT
+                </div>
+              </a>
+            </Link>
+            <Link href="#howto">
+              <a>
+                <div className="btn">
+                  HOW TO BUY
+                </div>
+              </a>
+            </Link>
+            <Link href="/">
+              <a>
+                <div className="btn">
+                  MOON MAP
+                </div>
+              </a>
+            </Link>
+            <Link href="/">
+              <a>
+                <div className="btn">
+                  TELEGRAM
+                </div>
+              </a>
+            </Link>
           </div>
         </div>
         <div className="moon-img">
@@ -71,12 +87,20 @@ export default function Home() {
                 Tsuki Inu($TKINU) is a community focused, decentralized cryptocurrency with instant rewards for holders. Join the moon mission.
               </div>
               <div className="flex justify-around mt-2">
-                <div className="rounded-full py-2 px-5 text-white btn-buy">
-                  BUY $TKINU
-                </div>
-                <div className="rounded-full py-2 px-5 text-white btn-tele">
-                  TELEGRAM
-                </div>
+                <Link href="/">
+                  <a>
+                    <div className="rounded-full py-2 px-5 text-white btn-buy">
+                      BUY $TKINU
+                    </div>
+                  </a>
+                </Link>
+                <Link href="/">
+                  <a>
+                    <div className="rounded-full py-2 px-5 text-white btn-tele">
+                      TELEGRAM
+                    </div>
+                  </a>
+                </Link>
               </div>
               <div className="flex mt-4 justify-center">
                 <Link href="#howto">
@@ -429,18 +453,26 @@ export default function Home() {
       </div>
       <div className="flex py-6 justify-center text-white" style={{backgroundColor: "#161b2b"}}>
           <div className="flex justify-around w-8/12 flex-col sm:flex-row">
-            <Header>
-              Price Chart
-            </Header>
-            <Header>
-              How to Buy
-            </Header>
-            <Header>
-              Moon Map
-            </Header>
-            <Header>
-              Contact US
-            </Header>
+            <Link href="/">
+              <Header>
+                Price Chart
+              </Header>
+            </Link>
+            <Link href="/">
+              <Header>
+                How to Buy
+              </Header>
+            </Link>
+            <Link href="/">
+              <Header>
+                Moon Map
+              </Header>
+            </Link>
+            <Link href="/">
+              <Header>
+                Contact US
+              </Header>
+            </Link>
           </div>
         </div>
     </ParallaxProvider>

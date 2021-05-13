@@ -86,13 +86,13 @@ export const MainContainer = styled.div.attrs({
     .btn-container {
         font-family: akira_expanded;
         display: flex;
-        .btn {
-            color: #c3e9fc;
-            padding: 0rem 1rem;
-            &:hover {
-                cursor: pointer;
-                color: #fff4ce;
-            }
+    }
+    .btn {
+        color: #c3e9fc;
+        padding: 0rem 1rem;
+        &:hover {
+            cursor: pointer;
+            color: #fff4ce;
         }
     }
 `;
