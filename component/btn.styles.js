@@ -32,11 +32,13 @@ export const MediaIcon = styled.a.attrs({
         width: 24px;
         height: 24px;
         z-index: 100;
-        background-color: white;
         &:hover {
             cursor: pointer;
-            color: white;
+
         }
+    }
+    &:hover {
+        background-color: white;
     }
     @media only screen and (max-width: 1024px) {
         padding: 0rem 0.4rem;
