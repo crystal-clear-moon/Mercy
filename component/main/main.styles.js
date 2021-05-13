@@ -82,6 +82,7 @@ export const MainContainer = styled.div.attrs({
 export const MoonContainer = styled.div.attrs({
 })`
     z-index: 100;
+    text-align: center;
     .moon-title {
         font-family: akira_expanded;
         color: #2f2e45;
