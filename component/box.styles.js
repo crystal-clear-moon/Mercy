@@ -4,8 +4,7 @@ export const Box = styled.div.attrs({
 })`
     margin-top: 4rem;
     margin-bottom: 4rem;
-    border-color: #fff4ce !important;
-    color: #fff4ce;
+    border-color: #5f543e !important;
     .header {
         font-weight: 900;
         font-size: 6rem;
@@ -23,10 +22,13 @@ export const Box = styled.div.attrs({
             margin-top: 0.5rem;
             font-size: 1.7rem;
         }
+        .div {
+            color: black;
+        }
     }
     div {
         p {
-            color: #fff4ce;
+            color: #5f543e;
             padding-top: 1rem;
         }
     }
@@ -46,7 +48,7 @@ export const Box = styled.div.attrs({
 `;
 export const Strength = styled.span.attrs({
 })`
-    color: #ebbd92;
+    color: red;
 `;
 
 export const Img = styled.img.attrs({
@@ -72,7 +74,7 @@ export const RoadMap = styled.div.attrs({
         .step {
             display: flex;
             text-align: start;
-            color: #fff4ce;
+            color: #5f543e;
             svg {
                 margin-right: 1rem;
             }
@@ -110,7 +112,7 @@ export const BoxContainer = styled.div.attrs({
 `;
 
 export const SubBox = styled.div.attrs({
-    className: "bg-black flex flex-col items-center"
+    className: "flex rounded-lg flex-col items-center shadow-lg hover:shadow-2xl"
 })`
     width: 30%;
     margin: 1rem;
@@ -126,8 +128,12 @@ export const SubBox = styled.div.attrs({
     }
     .box-header {
         font-size: 1.75rem;
-        color: #ebbd92;
+        color: #c73000;
         margin-bottom: 2rem;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: #f9f9f9;
     }
 }
 `;
@@ -144,13 +150,13 @@ export const SubStep = styled.div.attrs({
 })`
     .step-head {
         padding: 1rem 0rem;
-        color: #ebbd92;
+        color: #c73000;
         .step-num {
             padding: 0.2rem 0.7rem;
             margin-right: 0.4rem;
             border-radius: 50%;
-            background-color: #ebbd92;
-            color: black;
+            background-color: #c73000;
+            color: white;
         }
     }
 }

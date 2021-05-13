@@ -4,7 +4,7 @@ export const MainContainer = styled.div.attrs({
 })`
     min-height: 100vh;
     overflow: hidden;
-    background-image: linear-gradient(to bottom, #151a2a, #56334a);
+    background-image: linear-gradient(to bottom, #151a2a 0%, #56334a 98%, #a6839a 99%, white 100%);
     background-repeat:no-repeat;
     background-position: center center;
     position: relative;
@@ -32,10 +32,9 @@ export const MainContainer = styled.div.attrs({
     .moon-img {
         width: 100%;
         position: absolute;
-        top: 20rem;
         left: 0;
         img {
-            width: 60vh;
+            width: 80vh;
             margin-right: auto;
             margin-left: auto;
         }
@@ -66,8 +65,8 @@ export const MainContainer = styled.div.attrs({
 
 export const MoonContainer = styled.div.attrs({
 })`
-    margin-top: 10rem;
-    width: 40%;
+    margin-top: 15rem;
+    width: 60vh;
     z-index: 100;
     .moon-title {
         font-family: akira_expanded;
@@ -87,7 +86,7 @@ export const MoonContainer = styled.div.attrs({
 `;
 
 export const EleContainer = styled.div.attrs({
-    className: "max-w-screen-xl z-50 flex mt-48 mb-96 justify-around w-full"
+    className: "max-w-screen-xl z-50 flex mt-48 mb-36 justify-around w-full"
 })`
     .ele-title {
         font-family: akira_expanded;
@@ -112,13 +111,13 @@ export const EleContainer = styled.div.attrs({
 `;
 
 export const LeftContainer = styled.div.attrs({
-    className: "mt-48 mr-8"
+    className: "mt-48 mx-8 w-6/12"
 })`
     text-align: right;
 `;
 
 export const RightContainer = styled.div.attrs({
-    className: "mx-8"
+    className: "mx-8 w-6/12"
 })`
 
 `;
