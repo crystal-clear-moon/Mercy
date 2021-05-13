@@ -60,23 +60,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <MoonContainer>
-          <div className="moon-title">
-            TSUKI IS JAPANESE
-            FOR MOON
-          </div>
-          <div className="moon-desc">
-            Tsuki Inu($TKINU) is a community focused, decentralized cryptocurrency with instant rewards for holders. Join the moon mission.
-          </div>
-          <div className="flex justify-around mt-4">
-            <div className="rounded-full py-2 px-5 text-white btn-buy" style={{backgroundColor: "#945b82"}}>
-              BUY $TKINU
-            </div>
-            <div className="rounded-full py-2 px-5 text-white btn-tele">
-              TELEGRAM
-            </div>
-          </div>
-        </MoonContainer>
         <EleContainer>
           <LeftContainer>
             <div className="container">
@@ -134,8 +117,26 @@ export default function Home() {
         <Parallax className="star-img" y={[ "-450px", "500px"]} tagOuter="figure">
           <img src="/svg/stars.svg" />
         </Parallax>
-        <Parallax className="moon-img" y={[ "-300px", "500px"]} tagOuter="figure">
-          <img src="/svg/moon.svg" />
+        <Parallax className="moon-img" y={[ "-200px", "500px"]} tagOuter="figure">
+          <div className="img">
+            <MoonContainer>
+              <div className="moon-title">
+                TSUKI IS JAPANESE
+                FOR MOON
+              </div>
+              <div className="moon-desc">
+                Tsuki Inu($TKINU) is a community focused, decentralized cryptocurrency with instant rewards for holders. Join the moon mission.
+              </div>
+              <div className="flex justify-around mt-4">
+                <div className="rounded-full py-2 px-5 text-white btn-buy" style={{backgroundColor: "#945b82"}}>
+                  BUY $TKINU
+                </div>
+                <div className="rounded-full py-2 px-5 text-white btn-tele">
+                  TELEGRAM
+                </div>
+              </div>
+            </MoonContainer>
+          </div>
         </Parallax>
         <div className="middle-img">
           <img src="/svg/rocket.svg"/>

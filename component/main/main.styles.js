@@ -43,10 +43,16 @@ export const MainContainer = styled.div.attrs({
         position: absolute;
         top: 0px;
         left: 0;
-        img {
-            width: 65vh;
+        .img {
+            background-image: url("/svg/moon.svg");
+            width: 610px;
+            height: 610px;
             margin-right: auto;
             margin-left: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem;
         }
     }
     .header-title {
@@ -75,8 +81,6 @@ export const MainContainer = styled.div.attrs({
 
 export const MoonContainer = styled.div.attrs({
 })`
-    margin-top: 15rem;
-    width: 60vh;
     z-index: 100;
     .moon-title {
         font-family: akira_expanded;
