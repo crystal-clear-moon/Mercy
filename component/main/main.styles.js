@@ -94,9 +94,17 @@ export const MoonContainer = styled.div.attrs({
     }
     .btn-tele {
         background-color: #5d7a9e;
+        &:hover {
+            background-color: #945b82;
+            cursor: pointer;
+        }
     }
     .btn-buy {
-        background-color: #137dbb;
+        background-color: #945b82;
+        &:hover {
+            background-color: #5d7a9e;
+            cursor: pointer;
+        }
     }
 `;
 
@@ -117,11 +125,16 @@ export const EleContainer = styled.div.attrs({
     }
     .btn {
         border-radius: 5rem;
-        padding: 1rem 2rem;
+        padding: 0.5rem 2rem;
+        margin-top: 0.75rem;
         background-color: #74d0ef;
         text-align: center;
         font-size: 1.3rem;
         float: right;
+        &:hover {
+            background-color: #f38ab8;
+            cursor: pointer;
+        }
     }
 `;
 

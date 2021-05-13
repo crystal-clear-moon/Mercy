@@ -71,7 +71,7 @@ export default function Home() {
                 Tsuki Inu($TKINU) is a community focused, decentralized cryptocurrency with instant rewards for holders. Join the moon mission.
               </div>
               <div className="flex justify-around mt-4">
-                <div className="rounded-full py-2 px-5 text-white btn-buy" style={{backgroundColor: "#945b82"}}>
+                <div className="rounded-full py-2 px-5 text-white btn-buy">
                   BUY $TKINU
                 </div>
                 <div className="rounded-full py-2 px-5 text-white btn-tele">

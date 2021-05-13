@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Box = styled.div.attrs({
     className: "m-1 sm:m-6 p-4 sm:p-12 my-auto text-xl bg-transparent rounded-3xl max-w-screen-xl"
 })`
-    margin-top: 4rem;
+    margin-top: 1rem;
     margin-bottom: 4rem;
     border-color: #5f543e !important;
     .header {

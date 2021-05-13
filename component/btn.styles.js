@@ -29,7 +29,7 @@ export const MediaIcon = styled.a.attrs({
         height: 24px;
         &:hover {
             cursor: pointer;
-            color: blue;
+            color: #5d7a9e;
         }
     }
     @media only screen and (max-width: 1024px) {
