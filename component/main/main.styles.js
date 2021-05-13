@@ -34,6 +34,7 @@ export const MainContainer = styled.div.attrs({
         position: absolute;
         top: 0px;
         left: 0;
+        z-index: 10;
         img {
             width: 100%;
         }
@@ -41,6 +42,7 @@ export const MainContainer = styled.div.attrs({
     .moon-img {
         width: 100%;
         margin-top: 3rem;
+        z-index: 20;
         .img {
             background-image: url("/svg/moon.svg");
             width: 610px;
