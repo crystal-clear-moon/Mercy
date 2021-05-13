@@ -153,18 +153,23 @@ export const SubBox = styled.div.attrs({
 `;
 
 export const StepContainer = styled.div.attrs({
-    className: "animated fadeInUp"
+    className: " flex justify-around"
 })`
     margin-top: 100px !important;
+    .header {
+        
+    }
 }
 `;
 
 export const SubStep = styled.div.attrs({
-    className: "mb-4 js-show-on-scroll"
+    className: "mb-4 js-show-on-scroll flex flex-col items-center"
 })`
+    width: 24%;
     .step-head {
         padding: 1rem 0rem;
-        color: #c73000;
+        color: #007bff;
+        font-size: 2rem;
         .step-num {
             padding: 0.2rem 0.7rem;
             margin-right: 0.4rem;
@@ -174,7 +179,35 @@ export const SubStep = styled.div.attrs({
         }
     }
     .step-body {
-        padding-left: 2.5rem;
+        margin: 1rem 0rem 4rem 0rem;
+        display: flex;
+        align-items: center;
+        svg {
+            color: #007bff;
+            margin-right: 4px;
+        }
+    }
+    .step-bar {
+        width: 100%;
+        height: 0.5rem;
+        background-color: #ddd;
+        margin-top: 2rem;
     }
 }
+`;
+
+export const HowTo = styled.div.attrs({
+    className: "flex flex-col w-10/12 py-18"
+})`
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    .header {
+        text-align: center;
+        .currency {
+            font-size: 1.25rem;
+        }
+        div {
+            margin: 1.5rem 0rem;
+        }
+    }
 `;

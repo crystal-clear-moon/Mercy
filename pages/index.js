@@ -3,9 +3,9 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import React from 'react'
 import { Header, Mainbox, MediaIcon } from '../component/btn.styles'
-import { Box, Strength, Img, RoadMap, BgDiv, BoxContainer, SubBox, StepContainer, SubStep } from '../component/box.styles'
+import { Box, Strength, Img, RoadMap, BgDiv, BoxContainer, SubBox, StepContainer, SubStep, HowTo } from '../component/box.styles'
 import Link from 'next/link'
-import { FaTelegramPlane, FaRedditAlien, FaTwitter, FaInstagram, FaYoutube, FaMediumM, FaGithub } from "react-icons/fa";
+import { FaTelegramPlane, FaRedditAlien, FaTwitter, FaInstagram, FaYoutube, FaMediumM, FaGithub, FaAngleDoubleRight } from "react-icons/fa";
 import { MainContainer, MoonContainer, EleContainer, LeftContainer, RightContainer } from '../component/main/main.styles'
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 
@@ -117,7 +117,7 @@ export default function Home() {
         <Parallax className="star-img" y={[ "-200px", "600px"]} tagOuter="figure">
           <img src="/svg/stars.svg" />
         </Parallax>
-        <Parallax className="moon-img" y={[ "-150px", "600px"]} tagOuter="figure">
+        <Parallax className="moon-img" y={[ "-150px", "700px"]} tagOuter="figure">
           <div className="img">
             <MoonContainer>
               <div className="moon-title">
@@ -213,59 +213,62 @@ export default function Home() {
           </Box>
         </div>
         <div id="howto" className="w-full flex justify-center bg-gray-100" >
-          <Box>
+          <HowTo>
             <div className="header">
-              <div className="text-2xl sm:text-4xl lg:text-6xl">
-                HO​W TO BUY
+              <div className="currency">
+                $BINU
+              </div>
+              <div className="text-xl sm:text-4xl lg:text-6xl">
+                HO​W TO BUY?
               </div>
               <div className="header-desc">
-                Follow these steps or join our <Strength>Telegram</Strength> group if you need help
+                You can simply get $BINU token via Metamask wallet.
+                Please read and follow the steps for puchasing the Binu Token.
               </div>
             </div>
             <StepContainer>
               <SubStep>
                 <div className="step-head">
-                  <span className="step-num">1</span>
-                  Create a MetaMask Wallet
+                  STEP 1
                 </div>
+                <div className="step-bar" />
                 <div className="step-body">
-                    $KISHU token is available on the Ethereum blockchain.
-                    MetaMask is the market leader in ERC20 (Ethereum) wallets.
-                    On Google Chrome, visit <Strength>metamask.io</Strength> to download the extension and set up a wallet.
-                    On mobile? Get MetaMask's app for <Strength>iPhone</Strength> or <Strength>Android</Strength>.
+                  <FaAngleDoubleRight />
+                  Install Metamask for Chrome
                 </div>
               </SubStep>
               <SubStep>
                 <div className="step-head">
-                  <span className="step-num">2</span>
+                  STEP 2
+                </div>
+                <div className="step-bar" />
+                <div className="step-body">
+                  <FaAngleDoubleRight />
                   Send $ETH to MetaMask
                 </div>
+              </SubStep>
+              <SubStep>
+                <div className="step-head">
+                  STEP 3
+                </div>
+                <div className="step-bar" />
                 <div className="step-body">
-                  Buy Ethereum through MetaMask or transfer it to your MetaMask wallet address from another wallet (e.g. Coinbase or Binance).
+                  <FaAngleDoubleRight />
+                  Connect to Uniswap
                 </div>
               </SubStep>
               <SubStep>
                 <div className="step-head">
-                  <span className="step-num">3</span>
-                  Visit KISHU Swap
+                  STEP 4
                 </div>
+                <div className="step-bar" />
                 <div className="step-body">
-                  The only place to buy or sell <Strength>SHIB</Strength> or <Strength>LEASH</Strength> safely is on Uniswap. 
-                  There are some centralized exchanges that have listed SHIB, but CEXs have a history of locking funds. 
-                  If you can, it is safer to trade on a decentralized exchange like Uniswap or 1inch.
-                </div>
-              </SubStep>
-              <SubStep>
-                <div className="step-head">
-                  <span className="step-num">4</span>
-                  Swap $ETH for $KISHU
-                </div>
-                <div className="step-body">
-                  Enter the amount of $ETH you would like to swap for $KISHU. Click Connect Wallet then Swap
+                  <FaAngleDoubleRight />
+                  Swap $ETH for $BINU
                 </div>
               </SubStep>
             </StepContainer>
-          </Box>
+          </HowTo>
         </div>
       </div>
       <div id="roadmap" className="flex flex-col items-center text-pink-100">
