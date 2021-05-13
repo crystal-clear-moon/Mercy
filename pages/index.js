@@ -117,7 +117,7 @@ export default function Home() {
         <Parallax className="star-img" y={[ "-200px", "600px"]} tagOuter="figure">
           <img src="/svg/stars.svg" />
         </Parallax>
-        <Parallax className="moon-img" y={[ "-250px", "500px"]} tagOuter="figure">
+        <Parallax className="moon-img" y={[ "-200px", "500px"]} tagOuter="figure">
           <div className="img">
             <MoonContainer>
               <div className="moon-title">
@@ -134,6 +134,43 @@ export default function Home() {
                 <div className="rounded-full py-2 px-5 text-white btn-tele">
                   TELEGRAM
                 </div>
+              </div>
+              <div className="flex lg:mt-0 mt-6">
+                <Link href="#howto">
+                  <MediaIcon>
+                    <FaTelegramPlane />
+                  </MediaIcon>
+                </Link>
+                <Link href="/">
+                  <MediaIcon className="border-l border-r border-white">
+                    <FaRedditAlien />
+                  </MediaIcon>
+                </Link>
+                <Link href="/">
+                  <MediaIcon>
+                    <FaTwitter />
+                  </MediaIcon>
+                </Link>
+                <Link href="/">
+                  <MediaIcon className="border-l border-r border-white">
+                    <FaInstagram />
+                  </MediaIcon>
+                </Link>
+                <Link href="/">
+                  <MediaIcon>
+                    <FaYoutube />
+                  </MediaIcon>
+                </Link>
+                <Link href="/">
+                  <MediaIcon className="border-l border-r border-white">
+                    <FaMediumM />
+                  </MediaIcon>
+                </Link>
+                <Link href="/">
+                  <MediaIcon>
+                    <FaGithub />
+                  </MediaIcon>
+                </Link>
               </div>
             </MoonContainer>
           </div>
