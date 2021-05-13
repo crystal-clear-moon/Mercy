@@ -32,7 +32,7 @@ export const MainContainer = styled.div.attrs({
     .star-img {
         width: 100%;
         position: absolute;
-        top: -1000px;
+        top: 0px;
         left: 0;
         img {
             width: 100%;
@@ -41,7 +41,7 @@ export const MainContainer = styled.div.attrs({
     .moon-img {
         width: 100%;
         position: absolute;
-        top: -500px;
+        top: -880px;
         left: 0;
         img {
             width: 65vh;
