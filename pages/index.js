@@ -108,10 +108,10 @@ export default function Home() {
             </div>
           </RightContainer>
         </EleContainer>
-        <Parallax className="star-img" y={[ "-500px", "1200px"]} tagOuter="figure">
+        <Parallax className="star-img" y={[ "0px", "1200px"]} tagOuter="figure">
           <img src="/svg/stars.svg" />
         </Parallax>
-        <Parallax className="moon-img" y={[ "200px", "500px"]} tagOuter="figure">
+        <Parallax className="moon-img" y={[ "100px", "500px"]} tagOuter="figure">
           <img src="/svg/moon.svg" />
         </Parallax>
         <div className="middle-img">
