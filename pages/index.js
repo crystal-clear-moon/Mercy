@@ -130,7 +130,11 @@ export default function Home() {
                 Growing 260+k Community<br />
                 & more on the horizon
               </div>
-              <div className="btn">Button Here</div>
+              <Link href="/">
+                <a>
+                  <div className="btn">Button Here</div>
+                </a>
+              </Link>
             </div>
             <div className="container">
               <div className="ele-title">
@@ -142,7 +146,11 @@ export default function Home() {
                 Growing 260+k Community<br />
                 & more on the horizon
               </div>
-              <div className="btn">Button Here</div>
+              <Link href="/">
+                <a>
+                  <div className="btn">Button Here</div>
+                </a>
+              </Link>
             </div>
           </LeftContainer>
           <RightContainer>
@@ -156,7 +164,11 @@ export default function Home() {
                 Growing 260+k Community<br />
                 & more on the horizon
               </div>
-              <div className="btn">Button Here</div>
+              <Link href="/">
+                <a>
+                  <div className="btn">Button Here</div>
+                </a>
+              </Link>
             </div>
             <div className="container">
               <div className="ele-title">
@@ -168,7 +180,11 @@ export default function Home() {
                 Growing 260+k Community<br />
                 & more on the horizon
               </div>
-              <div className="btn">Button Here</div>
+              <Link href="/">
+                <a>
+                  <div className="btn">Button Here</div>
+                </a>
+              </Link>
             </div>
           </RightContainer>
         </EleContainer>
@@ -234,8 +250,14 @@ export default function Home() {
                 </div>
                 <div className="step-bar" />
                 <div className="step-body">
-                  <FaAngleDoubleRight />
-                  Install Metamask for Chrome
+                  <Link href="/">
+                    <a className="flex items-center">
+                      <FaAngleDoubleRight />
+                      <span className="text-center">
+                        Install Metamask for Chrome
+                      </span>
+                    </a>
+                  </Link>
                 </div>
               </SubStep>
               <SubStep>
@@ -244,8 +266,14 @@ export default function Home() {
                 </div>
                 <div className="step-bar" />
                 <div className="step-body">
-                  <FaAngleDoubleRight />
-                  Send $ETH to MetaMask
+                  <Link href="/">
+                    <a className="flex items-center">
+                      <FaAngleDoubleRight />
+                      <span className="text-center">
+                        Send $ETH to MetaMask
+                      </span>
+                    </a>
+                  </Link>
                 </div>
               </SubStep>
               <SubStep>
@@ -254,8 +282,14 @@ export default function Home() {
                 </div>
                 <div className="step-bar" />
                 <div className="step-body">
-                  <FaAngleDoubleRight />
-                  Connect to Uniswap
+                  <Link href="/">
+                    <a className="flex items-center">
+                      <FaAngleDoubleRight />
+                      <span className="text-center">
+                        Connect to Uniswap
+                      </span>
+                    </a>
+                  </Link>
                 </div>
               </SubStep>
               <SubStep>
@@ -264,8 +298,14 @@ export default function Home() {
                 </div>
                 <div className="step-bar" />
                 <div className="step-body">
-                  <FaAngleDoubleRight />
-                  Swap $TKINU for $BINU
+                  <Link href="/">
+                    <a className="flex items-center">
+                      <FaAngleDoubleRight />
+                      <span className="text-center">
+                        Swap $TKINU for $BINU
+                      </span>
+                    </a>
+                  </Link>
                 </div>
               </SubStep>
             </StepContainer>
