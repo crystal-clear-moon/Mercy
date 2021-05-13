@@ -49,7 +49,7 @@ export const Box = styled.div.attrs({
 `;
 export const Strength = styled.span.attrs({
 })`
-    color: red;
+    color: #ffc3bd;
 `;
 
 export const Img = styled.img.attrs({
@@ -77,6 +77,7 @@ export const RoadMap = styled.div.attrs({
             text-align: start;
             color: #5f543e;
             svg {
+                color: #ffc3bd;
                 margin-right: 1rem;
             }
         }
@@ -136,9 +137,9 @@ export const SubBox = styled.div.attrs({
     .box-body {
         font-size: 16px;
         font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
         text-align: center;
         color: #415076;
-        font-weight: 600;
         padding-top: 0px;
     }
     .box-img {
@@ -164,12 +165,12 @@ export const StepContainer = styled.div.attrs({
 `;
 
 export const SubStep = styled.div.attrs({
-    className: "mb-4 js-show-on-scroll flex flex-col items-center"
+    className: "js-show-on-scroll flex flex-col items-center"
 })`
-    width: 18rem;
+    width: 15rem;
     .step-head {
         padding: 1rem 0rem;
-        color: #007bff;
+        color: #ffc3bd;
         font-size: 2rem;
         .step-num {
             padding: 0.2rem 0.7rem;
@@ -180,11 +181,11 @@ export const SubStep = styled.div.attrs({
         }
     }
     .step-body {
-        margin: 1rem 0rem 4rem 0rem;
+        margin: 1rem 0rem rem 0rem;
         display: flex;
         align-items: center;
         svg {
-            color: #007bff;
+            color: #ffc3bd;
             margin-right: 4px;
         }
     }
@@ -200,6 +201,7 @@ export const SubStep = styled.div.attrs({
 export const HowTo = styled.div.attrs({
     className: "flex flex-col w-10/12 py-18"
 })`
+    max-width: 1024px;
     font-family: 'Montserrat',sans-serif;
     font-weight: bold;
     .header {

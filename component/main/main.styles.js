@@ -17,6 +17,15 @@ export const MainContainer = styled.div.attrs({
         z-index: 100;
         background-image: linear-gradient(to bottom, #ffffff00 0%, #ffffffff 100%);
     }
+    .rocket {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: calc( 100vh - 200px );
+        left: 200px;
+        z-index: 100;
+        opacity: 70%;
+    }
     .middle-img {
         width: 100%;
         position: absolute;
@@ -44,15 +53,16 @@ export const MainContainer = styled.div.attrs({
         margin-top: 3rem;
         z-index: 20;
         .img {
-            background-image: url("/svg/moon.svg");
-            width: 610px;
-            height: 610px;
+            background-image: url("/moon.png");
+            opacity: 80%;
+            width: 609px;
+            height: 609px;
             margin-right: auto;
             margin-left: auto;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 6rem;
+            padding: 4rem 7rem 6rem 5rem;
         }
     }
     .header-title {
@@ -86,11 +96,11 @@ export const MoonContainer = styled.div.attrs({
     .moon-title {
         font-family: akira_expanded;
         color: #2f2e45;
-        font-size: 1.8rem;
-        margin-bottom: 2rem;
+        font-size: 1.4rem;
+        margin-bottom: 0.75rem;
     }
     .moon-desc {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .btn-tele {
         background-color: #5d7a9e;
@@ -114,7 +124,7 @@ export const EleContainer = styled.div.attrs({
     .ele-title {
         font-family: akira_expanded;
         font-size: 2rem;
-        color: #f38ab8;
+        color: #ffc3bd;
     }
     .container {
         margin: 12rem 0rem;
@@ -132,7 +142,7 @@ export const EleContainer = styled.div.attrs({
         font-size: 1.3rem;
         float: right;
         &:hover {
-            background-color: #f38ab8;
+            background-color: #ffc3bd;
             cursor: pointer;
         }
     }
@@ -148,4 +158,11 @@ export const RightContainer = styled.div.attrs({
     className: "mx-8 w-6/12"
 })`
 
+`;
+export const SectionTitle = styled.div.attrs({
+    className: "text-xl sm:text-4xl lg:text-6xl mx-auto"
+})`
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color: black;
 `;
