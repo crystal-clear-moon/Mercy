@@ -117,7 +117,7 @@ export default function Home() {
         <Parallax className="star-img" y={[ "-200px", "600px"]} tagOuter="figure">
           <img src="/svg/stars.svg" />
         </Parallax>
-        <Parallax className="moon-img" y={[ "-200px", "500px"]} tagOuter="figure">
+        <Parallax className="moon-img" y={[ "-150px", "600px"]} tagOuter="figure">
           <div className="img">
             <MoonContainer>
               <div className="moon-title">
@@ -135,7 +135,7 @@ export default function Home() {
                   TELEGRAM
                 </div>
               </div>
-              <div className="flex lg:mt-0 mt-6">
+              <div className="flex mt-6 justify-center">
                 <Link href="#howto">
                   <MediaIcon>
                     <FaTelegramPlane />
