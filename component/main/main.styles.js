@@ -32,7 +32,7 @@ export const MainContainer = styled.div.attrs({
     .star-img {
         width: 100%;
         position: absolute;
-        top: 0px;
+        top: -750px;
         left: 0;
         img {
             width: 100%;
