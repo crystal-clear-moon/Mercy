@@ -25,6 +25,8 @@ export const MediaIcon = styled.a.attrs({
     padding: 0rem 0.7rem;
     svg {
         color: black;
+        width: 24px;
+        height: 24px;
         &:hover {
             cursor: pointer;
             color: blue;
