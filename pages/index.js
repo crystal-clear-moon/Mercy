@@ -111,7 +111,7 @@ export default function Home() {
         <Parallax className="star-img" y={[ "-300px", "1200px"]} tagOuter="figure">
           <img src="/svg/stars.svg" />
         </Parallax>
-        <Parallax className="moon-img" y={[ "50px", "500px"]} tagOuter="figure">
+        <Parallax className="moon-img" y={[ "-150px", "400px"]} tagOuter="figure">
           <img src="/svg/moon.svg" />
         </Parallax>
         <div className="middle-img">
