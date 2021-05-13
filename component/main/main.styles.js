@@ -67,7 +67,7 @@ export const MainContainer = styled.div.attrs({
     }
     .moon-img::before {  
         content: "";
-        background-image: url("/moon.png");
+        background-image: url("/Moon.png");
         position: absolute;
         opacity: 0.5;
         width: 609px;
