@@ -29,7 +29,7 @@ export const MainContainer = styled.div.attrs({
     .middle-img {
         width: 100%;
         position: absolute;
-        top: 0px;
+        top: 400px;
         left: 0;
         margin-top: 430px;
         img {
@@ -52,9 +52,9 @@ export const MainContainer = styled.div.attrs({
         width: 100%;
         margin-top: 3rem;
         z-index: 20;
+        display: flex;
+        justify-content: center;
         .img {
-            background-image: url("/moon.png");
-            opacity: 80%;
             width: 609px;
             height: 609px;
             margin-right: auto;
@@ -64,6 +64,14 @@ export const MainContainer = styled.div.attrs({
             justify-content: center;
             padding: 4rem 7rem 6rem 5rem;
         }
+    }
+    .moon-img::before {  
+        content: "";
+        background-image: url("/moon.png");
+        position: absolute;
+        opacity: 0.5;
+        width: 609px;
+        height: 609px;
     }
     .header-title {
         font-family: akira_expanded;
