@@ -172,7 +172,7 @@ export default function Home() {
             </div>
           </RightContainer>
         </EleContainer>
-        <Parallax className="star-img" y={[ "-700px", "0px"]} tagOuter="figure">
+        <Parallax className="star-img" y={[ "0px", "100px"]} tagOuter="figure">
           <img src="/svg/stars.svg" />
         </Parallax>
         <div className="middle-img">
