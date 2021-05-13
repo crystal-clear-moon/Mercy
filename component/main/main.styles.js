@@ -67,7 +67,7 @@ export const MainContainer = styled.div.attrs({
     }
     .moon-img::before {  
         content: "";
-        background-image: url("/Moon.png");
+        background-image: url("/moon.png");
         position: absolute;
         opacity: 0.5;
         width: 609px;
@@ -103,12 +103,13 @@ export const MoonContainer = styled.div.attrs({
     text-align: center;
     .moon-title {
         font-family: akira_expanded;
-        color: #2f2e45;
+        color: #fff4ce;
         font-size: 1.4rem;
         margin-bottom: 0.75rem;
     }
     .moon-desc {
         font-size: 1rem;
+        color: #c3e9fc;
     }
     .btn-tele {
         background-color: #5d7a9e;
