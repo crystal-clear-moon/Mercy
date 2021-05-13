@@ -40,9 +40,7 @@ export const MainContainer = styled.div.attrs({
     }
     .moon-img {
         width: 100%;
-        position: absolute;
-        top: 0px;
-        left: 0;
+        margin-top: 3rem;
         .img {
             background-image: url("/svg/moon.svg");
             width: 610px;
@@ -101,7 +99,7 @@ export const MoonContainer = styled.div.attrs({
 `;
 
 export const EleContainer = styled.div.attrs({
-    className: "max-w-screen-xl z-50 flex mt-48 mb-36 justify-around w-full"
+    className: "max-w-screen-xl z-50 flex mb-36 justify-around w-full"
 })`
     .ele-title {
         font-family: akira_expanded;

@@ -60,64 +60,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <EleContainer>
-          <LeftContainer>
-            <div className="container">
-              <div className="ele-title">
-                COMMUNITY POWERED
-              </div>
-              <div className="ele-desc">
-                TSUKI SWAP.<br />
-                Fun tokens. Artist incubator. <br />
-                Growing 260+k Community<br />
-                & more on the horizon
-              </div>
-              <div className="btn">Button Here</div>
-            </div>
-            <div className="container">
-              <div className="ele-title">
-                COMMUNITY POWERED
-              </div>
-              <div className="ele-desc">
-                TSUKI SWAP.<br />
-                Fun tokens. Artist incubator. <br />
-                Growing 260+k Community<br />
-                & more on the horizon
-              </div>
-              <div className="btn">Button Here</div>
-            </div>
-          </LeftContainer>
-          <RightContainer>
-            <div className="container">
-              <div className="ele-title">
-                TSUKI IS JAPANESE FOR MOON
-              </div>
-              <div className="ele-desc">
-                TSUKI SWAP.<br />
-                Fun tokens. Artist incubator. <br />
-                Growing 260+k Community<br />
-                & more on the horizon
-              </div>
-              <div className="btn">Button Here</div>
-            </div>
-            <div className="container">
-              <div className="ele-title">
-                TSUKI IS JAPANESE FOR MOON
-              </div>
-              <div className="ele-desc">
-                TSUKI SWAP.<br />
-                Fun tokens. Artist incubator. <br />
-                Growing 260+k Community<br />
-                & more on the horizon
-              </div>
-              <div className="btn">Button Here</div>
-            </div>
-          </RightContainer>
-        </EleContainer>
-        <Parallax className="star-img" y={[ "-200px", "600px"]} tagOuter="figure">
-          <img src="/svg/stars.svg" />
-        </Parallax>
-        <Parallax className="moon-img" y={[ "-150px", "700px"]} tagOuter="figure">
+        <div className="moon-img">
           <div className="img">
             <MoonContainer>
               <div className="moon-title">
@@ -174,7 +117,64 @@ export default function Home() {
               </div>
             </MoonContainer>
           </div>
-        </Parallax>
+        </div>
+        <EleContainer>
+          <LeftContainer>
+            <div className="container">
+              <div className="ele-title">
+                COMMUNITY POWERED
+              </div>
+              <div className="ele-desc">
+                TSUKI SWAP.<br />
+                Fun tokens. Artist incubator. <br />
+                Growing 260+k Community<br />
+                & more on the horizon
+              </div>
+              <div className="btn">Button Here</div>
+            </div>
+            <div className="container">
+              <div className="ele-title">
+                COMMUNITY POWERED
+              </div>
+              <div className="ele-desc">
+                TSUKI SWAP.<br />
+                Fun tokens. Artist incubator. <br />
+                Growing 260+k Community<br />
+                & more on the horizon
+              </div>
+              <div className="btn">Button Here</div>
+            </div>
+          </LeftContainer>
+          <RightContainer>
+            <div className="container">
+              <div className="ele-title">
+                TSUKI IS JAPANESE FOR MOON
+              </div>
+              <div className="ele-desc">
+                TSUKI SWAP.<br />
+                Fun tokens. Artist incubator. <br />
+                Growing 260+k Community<br />
+                & more on the horizon
+              </div>
+              <div className="btn">Button Here</div>
+            </div>
+            <div className="container">
+              <div className="ele-title">
+                TSUKI IS JAPANESE FOR MOON
+              </div>
+              <div className="ele-desc">
+                TSUKI SWAP.<br />
+                Fun tokens. Artist incubator. <br />
+                Growing 260+k Community<br />
+                & more on the horizon
+              </div>
+              <div className="btn">Button Here</div>
+            </div>
+          </RightContainer>
+        </EleContainer>
+        <div className="star-img">
+          <img src="/svg/stars.svg" />
+        </div>
         <div className="middle-img">
           <img src="/svg/rocket.svg"/>
           <img src="/svg/rocket-trail.svg"/>
@@ -222,7 +222,7 @@ export default function Home() {
                 HO​W TO BUY?
               </div>
               <div className="header-desc">
-                You can simply get $BINU token via Metamask wallet.
+                You can simply get $BINU token via Metamask wallet.<br />
                 Please read and follow the steps for puchasing the Binu Token.
               </div>
             </div>

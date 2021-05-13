@@ -165,7 +165,7 @@ export const StepContainer = styled.div.attrs({
 export const SubStep = styled.div.attrs({
     className: "mb-4 js-show-on-scroll flex flex-col items-center"
 })`
-    width: 24%;
+    width: 20rem;
     .step-head {
         padding: 1rem 0rem;
         color: #007bff;
