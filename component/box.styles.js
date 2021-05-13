@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 export const Box = styled.div.attrs({
     className: "m-1 sm:m-6 p-4 sm:p-12 my-auto text-xl bg-transparent rounded-3xl max-w-screen-xl"
 })`
@@ -107,7 +108,6 @@ export const BgDiv = styled.div.attrs({
 export const BoxContainer = styled.div.attrs({
     className: "flex flex-wrap js-show-on-scroll"
 })`
-    marginTop: 100px;
 }
 `;
 
@@ -127,17 +127,19 @@ export const SubBox = styled.div.attrs({
         padding: 1rem;
     }
     .box-header {
-        font-size: 1.75rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.375rem;
         color: black;
-        margin-bottom: 2rem;
-        font-weight: 100;
+        margin-bottom: 0.25rem;
+        font-weight: 800;
     }
     .box-body {
         font-size: 16px;
-        font-family: "Montserrat", sans-serif;
+        font-family: 'Montserrat', sans-serif;
         text-align: center;
-        font-weight: 100;
         color: #415076;
+        font-weight: 600;
+        padding-top: 0px;
     }
     .box-img {
         width: 25%;

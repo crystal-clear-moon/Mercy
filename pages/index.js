@@ -38,7 +38,8 @@ export default function Home() {
         <title>Treat Token</title>
         <meta name="description" content="Shiba token" />
         <link rel="icon" href="/head-logo.png" />
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet" />
       </Head>
       <MainContainer>
         <div className="flex flex-col items-center">
@@ -152,26 +153,23 @@ export default function Home() {
               <SubBox>
                 <img className="box-img" src="/icon1.png" />
                 <div className="box-header">Community Powerd</div>
-                <div className="box-body">
-                  <Strength>⦿ SHIB</Strength> is an experiment in decentralized spontaneous community building. SHIB token is our first token and allows users to hold Billions or even Trillions of them.  Nicknamed the DOGECOIN KILLER
-                </div>
+                <p className="box-body">
+                  KISHU is fully decentralized and owned by its fun, vibrant community. We welcome and embrace diverse perspectives to build KISHU into the best community in crypto.
+                </p>
               </SubBox>
               <SubBox>
                 <img className="box-img" src="/icon2.png" />
                 <div className="box-header">Community Powerd</div>
-                <div className="box-body">
-                  We locked the 50% of the total supply to Uniswap and threw away the keys! 
-                  The remaining 50% was burned to Vitalik Buterin and we were the first project following this path, so everyone has to buy on the open market, ensuring a fair and complete distribution where devs don't own team tokens they can dump on the community.
-                </div>
+                <p className="box-body">
+                  For every transaction in KISHU's network (buy or sell), 2% of the transaction is distributed to existing holders. That means you earn $KISHU just by holding it in your wallet.
+                </p>
               </SubBox>
               <SubBox>
-                <img className="box-img" src="/icon3.png" />
+                <img className="box-img" src="svg/icon3.svg" />
                 <div className="box-header">Community Powerd</div>
-                <div className="box-body">
-                  <Strength>⦿  LEASH</Strength>  was originally set to be a rebase token pegged to the price of Dogecoin. Now, it has been unleashed and will not rebase. 
-                  With a total circulation of ONLY 100k tokens, it has the opposite appeal to Shib (which has a much larger supply). 
-                  The second token incentivized on the swap offers special rewards for those who provide liquidity.  
-                </div>
+                <p className="box-body">
+                  KISHU has been <Strength>audited</Strength> and its LP (Liquidity Pool) tokens have been burnt. That means zero risk to our investors from potential bad actors.
+                </p>
               </SubBox>
             </BoxContainer>
           </Box>
