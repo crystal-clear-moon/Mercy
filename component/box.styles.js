@@ -190,7 +190,7 @@ export const SubStep = styled.div.attrs({
         }
     }
     .step-bar {
-        width: 100%;
+        width: 95%;
         height: 0.5rem;
         background-color: #ddd;
         margin-top: 2rem;
