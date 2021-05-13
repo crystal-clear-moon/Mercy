@@ -156,6 +156,7 @@ export const StepContainer = styled.div.attrs({
     className: " flex justify-around"
 })`
     margin-top: 100px !important;
+    max-width: 1440px;
     .header {
         
     }
@@ -165,7 +166,7 @@ export const StepContainer = styled.div.attrs({
 export const SubStep = styled.div.attrs({
     className: "mb-4 js-show-on-scroll flex flex-col items-center"
 })`
-    width: 20rem;
+    width: 18rem;
     .step-head {
         padding: 1rem 0rem;
         color: #007bff;
