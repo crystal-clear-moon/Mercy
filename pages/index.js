@@ -109,7 +109,7 @@ export default function Home() {
                   </MediaIcon>
                 </Link>
                 <Link href="/">
-                  <MediaIcon className="border-l border-r border-white">
+                  <MediaIcon>
                     <FaRedditAlien />
                   </MediaIcon>
                 </Link>
@@ -119,7 +119,7 @@ export default function Home() {
                   </MediaIcon>
                 </Link>
                 <Link href="/">
-                  <MediaIcon className="border-l border-r border-white">
+                  <MediaIcon>
                     <FaInstagram />
                   </MediaIcon>
                 </Link>
@@ -129,7 +129,7 @@ export default function Home() {
                   </MediaIcon>
                 </Link>
                 <Link href="/">
-                  <MediaIcon className="border-l border-r border-white">
+                  <MediaIcon>
                     <FaMediumM />
                   </MediaIcon>
                 </Link>

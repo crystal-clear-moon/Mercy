@@ -22,12 +22,17 @@ export const Mainbox = styled.div.attrs({
 
 export const MediaIcon = styled.a.attrs({
 })`
-    padding: 0rem 0.7rem;
+    padding: 0.5rem;
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
+    background-color: #ffffff44;
+    border-radius: 100%;
     svg {
         color: black;
         width: 24px;
         height: 24px;
         z-index: 100;
+        background-color: white;
         &:hover {
             cursor: pointer;
             color: white;
