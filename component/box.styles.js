@@ -126,8 +126,8 @@ export const SubBox = styled.div.attrs({
     padding: 2rem;
     @media only screen and (max-width: 768px) {
         width: 45%;
-        margin: 1rem;
-        padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
     }
     @media only screen and (max-width: 425px) {
         width: 100%;
