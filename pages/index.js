@@ -253,7 +253,7 @@ export default function Home() {
             </BoxContainer>
           </Box>
         </div>
-        <div id="howto" className="w-full flex justify-center bg-gray-100 py-48" >
+        <div id="howto" className="w-full flex justify-center bg-gray-100 py-24 sm:py-48" >
           <HowTo>
             <div className="header">
               <div className="currency">
@@ -336,7 +336,7 @@ export default function Home() {
           </HowTo>
         </div>
       </div>
-      <div id="roadmap" className="flex flex-col items-center text-pink-100 my-48">
+      <div id="roadmap" className="flex flex-col items-center text-pink-100 my-24 sm:my-48">
         <SectionTitle>
           Moon Map
         </SectionTitle>

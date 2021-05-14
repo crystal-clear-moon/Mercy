@@ -70,6 +70,9 @@ export const MainContainer = styled.div.attrs({
             align-items: center;
             justify-content: center;
             padding: 4rem 7rem 6rem 5rem;
+            @media only screen and (max-width: 425px) {
+                padding: 4rem;
+            }
         }
     }
     .moon-img::before {  
@@ -83,7 +86,7 @@ export const MainContainer = styled.div.attrs({
             width: 500px;
             height: 500px;
             background-size: 500px 500px;
-            margin-top: 4rem;
+            margin-top: 5rem;
         }
     }
     .header-title {
@@ -157,12 +160,16 @@ export const EleContainer = styled.div.attrs({
 })`
     @media only screen and (max-width: 425px) {
         display: block;
-        padding: 0rem 1rem;
+        padding: 0rem 2rem;
     }
     .ele-title {
         font-family: akira_expanded;
         font-size: 2rem;
         color: #ffc3bd;
+        @media only screen and (max-width: 425px) {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
     }
     .container {
         margin: 12rem 0rem;
@@ -173,6 +180,9 @@ export const EleContainer = styled.div.attrs({
     .ele-desc {
         color: #74d0ef;
         font-size: 1.3rem;
+        @media only screen and (max-width: 425px) {
+            font-size: 1.1rem;
+        }
     }
     .btn {
         border-radius: 5rem;

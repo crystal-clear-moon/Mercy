@@ -46,6 +46,9 @@ export const Box = styled.div.attrs({
     @media only screen and (max-width: 425px) {
         margin-bottom: 1rem;
     }
+    @media only screen and (max-width: 1024px) {
+        padding: 0rem;
+    }
 `;
 export const Strength = styled.span.attrs({
 })`
@@ -85,7 +88,7 @@ export const RoadMap = styled.div.attrs({
             width: 48%;
         }
         @media only screen and (max-width: 425px) {
-            width: 90vw;
+            width: 70vw;
         }
     }
     @media only screen and (max-width: 1024px) {
@@ -121,13 +124,12 @@ export const SubBox = styled.div.attrs({
     width: 30%;
     margin: 1rem;
     padding: 2rem;
-    @media only screen and (max-width: 1024px) {
-        width: 100%;
-        margin: 2rem 2rem;
+    @media only screen and (max-width: 768px) {
+        width: 45%;
     }
     @media only screen and (max-width: 425px) {
         width: 100%;
-        margin: 1rem 0rem;
+        margin: 1rem;
         padding: 1rem;
     }
     .box-header {
@@ -202,6 +204,9 @@ export const SubStep = styled.div.attrs({
         margin-top: 2rem;
         margin-bottom: 1rem;
         border-radius: 0.25rem;
+    }
+    @media only screen and (max-width: 425px) {
+        margin-bottom: 2rem;
     }
 }
 `;
