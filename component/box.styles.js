@@ -113,19 +113,21 @@ export const BgDiv = styled.div.attrs({
 `;
 
 export const BoxContainer = styled.div.attrs({
-    className: "flex flex-wrap js-show-on-scroll"
+    className: "flex flex-wrap"
 })`
 }
 `;
 
 export const SubBox = styled.div.attrs({
-    className: "flex rounded-lg flex-col items-center shadow-lg hover:shadow-2xl"
+    className: "flex rounded-lg flex-col items-center shadow-lg hover:shadow-2xl js-show-on-scroll"
 })`
     width: 30%;
     margin: 1rem;
     padding: 2rem;
     @media only screen and (max-width: 768px) {
         width: 45%;
+        margin: 1rem;
+        padding: 1rem;
     }
     @media only screen and (max-width: 425px) {
         width: 100%;
