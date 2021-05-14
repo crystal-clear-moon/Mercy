@@ -115,7 +115,6 @@ export const BgDiv = styled.div.attrs({
 export const BoxContainer = styled.div.attrs({
     className: "flex flex-wrap"
 })`
-}
 `;
 
 export const SubBox = styled.div.attrs({
@@ -130,8 +129,9 @@ export const SubBox = styled.div.attrs({
         margin-right: auto;
     }
     @media only screen and (max-width: 425px) {
-        width: 100%;
-        margin: 1rem;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
         padding: 1rem;
     }
     .box-header {
