@@ -25,6 +25,10 @@ export const MainContainer = styled.div.attrs({
         left: 200px;
         z-index: 100;
         opacity: 70%;
+        @media only screen and (max-width: 425px) {
+            top: 105vh;
+            left: 0;
+        }
     }
     .middle-img {
         width: 100%;
@@ -36,6 +40,9 @@ export const MainContainer = styled.div.attrs({
             width: 60px;
             margin-right: auto;
             margin-left: auto;
+        }
+        @media only screen and (max-width: 425px) {
+            display: none;
         }
     }
     .star-img {
@@ -72,11 +79,21 @@ export const MainContainer = styled.div.attrs({
         opacity: 0.5;
         width: 609px;
         height: 609px;
+        @media only screen and (max-width: 425px) {
+            width: 500px;
+            height: 500px;
+            background-size: 500px 500px;
+            margin-top: 4rem;
+        }
     }
     .header-title {
         font-family: akira_expanded;
         color: #fff4ce;
         font-size: 3.5rem;
+        @media only screen and (max-width: 425px) {
+            font-size: 2rem;
+        }
+
     }
     .logo-img {
         width: 8rem;
@@ -86,6 +103,11 @@ export const MainContainer = styled.div.attrs({
     .btn-container {
         font-family: akira_expanded;
         display: flex;
+        @media only screen and (max-width: 425px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2rem;
+        }
     }
     .btn {
         color: white;
@@ -93,6 +115,9 @@ export const MainContainer = styled.div.attrs({
         &:hover {
             cursor: pointer;
             color: #fff4ce;
+        }
+        @media only screen and (max-width: 425px) {
+            margin-bottom: 2rem;
         }
     }
 `;
@@ -130,6 +155,10 @@ export const MoonContainer = styled.div.attrs({
 export const EleContainer = styled.div.attrs({
     className: "max-w-screen-xl z-50 flex mb-36 justify-around w-full"
 })`
+    @media only screen and (max-width: 425px) {
+        display: block;
+        padding: 0rem 1rem;
+    }
     .ele-title {
         font-family: akira_expanded;
         font-size: 2rem;
@@ -137,6 +166,9 @@ export const EleContainer = styled.div.attrs({
     }
     .container {
         margin: 12rem 0rem;
+        @media only screen and (max-width: 425px) {
+            margin: 4rem 0rem;
+        }
     }
     .ele-desc {
         color: #74d0ef;
@@ -154,6 +186,11 @@ export const EleContainer = styled.div.attrs({
             background-color: #ffc3bd;
             cursor: pointer;
         }
+        @media only screen and (max-width: 425px) {
+            float: none;
+            width: 14rem;
+            margin: 1rem auto;
+        }
     }
 `;
 
@@ -161,15 +198,26 @@ export const LeftContainer = styled.div.attrs({
     className: "mt-48 mx-8 w-6/12"
 })`
     text-align: right;
+    @media only screen and (max-width: 425px) {
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
 `;
 
 export const RightContainer = styled.div.attrs({
     className: "mx-8 w-6/12"
 })`
-
+    @media only screen and (max-width: 425px) {
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        width: 100%
+    }
 `;
 export const SectionTitle = styled.div.attrs({
-    className: "text-xl sm:text-4xl lg:text-6xl mx-auto"
+    className: "text-3xl sm:text-4xl lg:text-6xl mx-auto"
 })`
     font-family: Montserrat, sans-serif;
     font-weight: bold;

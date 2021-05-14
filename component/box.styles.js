@@ -161,6 +161,9 @@ export const StepContainer = styled.div.attrs({
     .header {
         
     }
+    @media only screen and (max-width: 425px) {
+        flex-wrap: wrap;
+    }
 }
 `;
 
