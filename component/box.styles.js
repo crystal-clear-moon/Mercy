@@ -82,11 +82,14 @@ export const RoadMap = styled.div.attrs({
             }
         }
         @media only screen and (max-width: 1024px) {
-            width: 48vw;
+            width: 48%;
         }
         @media only screen and (max-width: 425px) {
             width: 90vw;
         }
+    }
+    @media only screen and (max-width: 1024px) {
+        padding: 0rem 5rem;
     }
 `;
 
