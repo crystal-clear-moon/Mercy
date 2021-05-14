@@ -25,7 +25,7 @@ export const MainContainer = styled.div.attrs({
         left: 200px;
         z-index: 100;
         opacity: 70%;
-        @media only screen and (max-width: 425px) {
+        @media only screen and (max-width: 1024px) {
             top: 105vh;
             left: 0;
         }
